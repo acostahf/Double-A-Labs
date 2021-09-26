@@ -25,9 +25,29 @@ const data = [
 const SectionTwo = () => {
   return (
     <div>
-      <div>cards go here</div>
-      <button> Contact Us To Explore</button>
-      <h1>Connecting Entertainment and Enterprise</h1>
+      <div className="">
+        <div className="flex flex-wrap">
+          {data.map(content => (
+            <div className="w-1/2 p-5">
+              <h1 className="font-bold text-xl">{content.title}</h1>
+              <p>{content.content}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className=" ">
+        <div className="pb-20 flex justify-center">
+          <button className="rounded-lg py-3 px-5 text-white bg-blue-600">
+            {" "}
+            Contact Us To Explore
+          </button>
+        </div>
+      </div>
+      <div className="text-center ">
+        <h1 className="font-bold text-3xl ">
+          Connecting <br /> Entertainment and Enterprise
+        </h1>
+      </div>
     </div>
   )
 }

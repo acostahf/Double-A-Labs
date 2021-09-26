@@ -11,11 +11,13 @@ import SectionFive from "../components/sectionFive"
 import SectionSix from "../components/sectionSix"
 import SectionSeven from "../components/sectionSeven"
 import SectionFour from "../components/sectionFour"
+import SectionOne from "../components/sectionOne"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <Hero />
+    <SectionOne />
     <SectionTwo />
     <SectionThree />
     <SectionFour />
