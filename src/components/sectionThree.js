@@ -1,4 +1,5 @@
 import React from "react"
+import DalImg from "../images/img1.png"
 
 const SectionThree = () => {
   return (
@@ -13,7 +14,9 @@ const SectionThree = () => {
       </div>
       <div>
         <div className=" flex justify-center items-center p-20">
-          <div>Where the image goes</div>
+          <div>
+            <img src={DalImg} />
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-2">
