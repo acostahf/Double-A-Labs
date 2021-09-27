@@ -1,4 +1,5 @@
 import React from "react"
+import TeamSlider from "./teamSlider"
 
 const SectionSix = () => {
   return (
@@ -7,7 +8,9 @@ const SectionSix = () => {
         <h1 className="font-black text-3xl">Meet Our Leadership Team</h1>
         <p>We’re a growing team of experts and thought leaders.</p>
       </div>
-      <div className="bg-red-900 p-20 text-center">cards goes here</div>
+      <div className=" p-20 text-center">
+        <TeamSlider />
+      </div>
 
       <div className="p-20 ">
         <div className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-xl p-10 flex ">
