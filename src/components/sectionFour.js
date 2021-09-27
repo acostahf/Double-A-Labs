@@ -1,4 +1,5 @@
 import React from "react"
+import CaseSlider from "./sliders/caseSlider"
 import ProductSlider from "./sliders/productSllider"
 
 const SectionFour = () => {
@@ -20,8 +21,8 @@ const SectionFour = () => {
         </div>
       </div>
 
-      <div className="bg-red-900 p-10 text-center">
-        This is where the slider goes
+      <div className=" p-10 text-center">
+        <CaseSlider />
       </div>
       <div>
         <div className="text-center p-10">
