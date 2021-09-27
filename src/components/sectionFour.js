@@ -1,4 +1,5 @@
 import React from "react"
+import ProductSlider from "./sliders/productSllider"
 
 const SectionFour = () => {
   return (
@@ -31,8 +32,8 @@ const SectionFour = () => {
           </h1>
         </div>
       </div>
-      <div className="bg-red-900 p-10 text-center">
-        This is where the second slider goes
+      <div className="p-10 text-center">
+        <ProductSlider />
       </div>
       <div className="flex justify-center pb-20">
         <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5">

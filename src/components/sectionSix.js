@@ -1,5 +1,5 @@
 import React from "react"
-import TeamSlider from "./teamSlider"
+import TeamSlider from "./sliders/teamSlider"
 
 const SectionSix = () => {
   return (
