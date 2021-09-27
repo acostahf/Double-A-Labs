@@ -32,15 +32,15 @@ const data = [
 
 const TeamSlider = () => {
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="bg-blue-600">
       {data.map(content => (
-        <div className=" p-20">
-          <div className="shadow-xl rounded-lg p-10 ">
+        <div className="p-5 bg-red-400 ">
+          <div className="shadow-xl rounded-lg p-10 flex flex-grow flex-col ">
             <div className="flex pb-10">
               <div className="bg-blue-600 w-1/4 ">
                 <h1>{content.img}</h1>
               </div>
-              <div className="w-3/4 px-5">
+              <div className="text-left w-3/4 px-5">
                 <h1 className="text-xl font-black ">{content.name}</h1>
                 <h1>{content.occ} </h1>
               </div>

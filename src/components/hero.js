@@ -4,8 +4,10 @@ import computerImg from "../images/computer.png"
 const Hero = () => {
   return (
     <div className=" grid grid-cols-2">
-      <div className="py-20 px-40">
-        <h1 className="text-4xl font-bold">We are on a Mission to make B2B</h1>
+      <div className="py-20 pl-20 pr-40">
+        <h1 className="text-4xl font-bold">
+          We are on a Mission <br /> to make B2B
+        </h1>
         <h1 className="pb-10 text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-yellow-500  to-red-500">
           Fun & Engaging
         </h1>

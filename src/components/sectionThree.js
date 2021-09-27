@@ -22,22 +22,30 @@ const SectionThree = () => {
       <div className="grid grid-cols-2">
         <div className="text-center pb-20">
           <div className="pb-5">
-            <h3 className="font-bold text-blue-700">Stagnant communications</h3>
-            <h3>One dimensional basic functionality attention</h3>
+            <h3 className="font-bold text-nmr-lightGreen">
+              Stagnant communications
+            </h3>
+            <h3 className="text-gray-400 italic">
+              One dimensional basic functionality attention
+            </h3>
           </div>
           <div className="pb-5">
-            <h3 className="font-bold text-blue-700">“Zoom” fatigue</h3>
-            <h3>dESIGN FLAWS THAT EXHAUST BODY and MIND</h3>
+            <h3 className="font-bold text-nmr-lightGreen">“Zoom” fatigue</h3>
+            <h3 className="text-gray-400 italic">
+              design flows that exhaust body & mind
+            </h3>
           </div>
         </div>
         <div className="text-center pb-20">
           <div className="pb-5">
-            <h3 className="font-bold text-blue-700">Distracting environment</h3>
-            <h3>cOMPETE FOR THE VIEWER’S </h3>
+            <h3 className="font-bold text-nmr-darkBlue">
+              Distracting environment
+            </h3>
+            <h3 className="text-gray-400 italic">Compete for the viewer's </h3>
           </div>
           <div className="pb-5">
-            <h3 className="font-bold text-blue-700">Static Interface</h3>
-            <h3>Limited Interactions</h3>
+            <h3 className="font-bold text-nmr-darkBlue">Static Interface</h3>
+            <h3 className="text-gray-400 italic">Limited Interactions</h3>
           </div>
         </div>
       </div>

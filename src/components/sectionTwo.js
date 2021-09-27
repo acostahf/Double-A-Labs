@@ -37,7 +37,7 @@ const SectionTwo = () => {
             <div className="w-1/2 p-10">
               {/* <Image src="mic.png" className="" alt="Sunset Image" /> */}
               <h1 className="font-bold text-xl">{content.title}</h1>
-              <p className="text-gray-500">{content.content}</p>
+              <p className="text-gray-400 text-sm">{content.content}</p>
             </div>
           ))}
         </div>

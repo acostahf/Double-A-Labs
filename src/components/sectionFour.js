@@ -10,9 +10,9 @@ const SectionFour = () => {
           {" "}
           A PRODUCT BY DOUBE A LABS
         </h3>
-        <h1 className="text-3xl font-black pb-2">Case Studies</h1>
+        <h1 className="text-4xl font-black pb-5">Case Studies</h1>
         <div className="px-36 ">
-          <p className="">
+          <p className="text-gray-400 text-md">
             Double Space Experience provides a unique way to interact with your
             audience. A place where you can natively broadcast video, conduct
             interviews, and hang with friends using spatial audio to give you an
@@ -26,8 +26,8 @@ const SectionFour = () => {
       </div>
       <div>
         <div className="text-center p-10">
-          <h1 className="font-black text-3xl">Production Services</h1>
-          <h1>
+          <h1 className="font-black text-4xl pb-5">Production Services</h1>
+          <h1 className="text-gray-400 text-md">
             With our production experts, we can enrich your world by providing a
             depth of content to support your brand.
           </h1>
@@ -37,7 +37,7 @@ const SectionFour = () => {
         <ProductSlider />
       </div>
       <div className="flex justify-center pb-20">
-        <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5">
+        <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-full text-white py-3 px-5">
           Contact Us To Explore
         </button>
       </div>

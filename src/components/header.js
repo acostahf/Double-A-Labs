@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
-  <header className="bg-white shadow-lg">
+  <header className="bg-white shadow-xl">
     <div className="container px-10 py-4 flex mx-auto justify-between items-center ">
       <h1 style={{ margin: 0 }}>
         <Link to="/" className="text-black font-bold uppercase ">
@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <div>
-        <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5">
+        <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-md text-white py-2 px-10">
           Request Demo
         </button>
       </div>
