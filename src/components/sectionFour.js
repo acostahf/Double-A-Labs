@@ -3,18 +3,20 @@ import React from "react"
 const SectionFour = () => {
   return (
     <div className="flex flex-col justify-center">
-      <div className="text-center">
-        <h3 className="text-sm font-bold text-blue-700">
+      <div className="text-center px-20">
+        <h3 className="text-sm font-bold text-nmr-lightBlue pb-2">
           {" "}
           A PRODUCT BY DOUBE A LABS
         </h3>
-        <h1 className="text-3xl font-black">Case Studies</h1>
-        <p className="">
-          Double Space Experience provides a unique way to interact with your
-          audience. A place where you can natively broadcast video, conduct
-          interviews, and hang with friends using spatial audio to give you an
-          immersive experience.
-        </p>
+        <h1 className="text-3xl font-black pb-2">Case Studies</h1>
+        <div className="px-36 ">
+          <p className="">
+            Double Space Experience provides a unique way to interact with your
+            audience. A place where you can natively broadcast video, conduct
+            interviews, and hang with friends using spatial audio to give you an
+            immersive experience.
+          </p>
+        </div>
       </div>
 
       <div className="bg-red-900 p-10 text-center">
@@ -33,7 +35,7 @@ const SectionFour = () => {
         This is where the second slider goes
       </div>
       <div className="flex justify-center pb-20">
-        <button className="bg-blue-800 rounded-lg px-5 py-3 text-white">
+        <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5">
           Contact Us To Explore
         </button>
       </div>

@@ -10,7 +10,7 @@ const SectionSix = () => {
       <div className="bg-red-900 p-20 text-center">cards goes here</div>
 
       <div className="p-20 ">
-        <div className="bg-blue-500 rounded-lg p-10 flex ">
+        <div className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-xl p-10 flex ">
           <div className="w-3/4">
             <h1 className="text-white font-bold text-lg">
               Join the Double A Labs Team

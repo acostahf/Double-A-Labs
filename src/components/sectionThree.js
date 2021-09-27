@@ -13,7 +13,7 @@ const SectionThree = () => {
         </div>
       </div>
       <div>
-        <div className=" flex justify-center items-center p-20">
+        <div className=" flex justify-center items-center px-20 py-10">
           <div>
             <img src={DalImg} />
           </div>
