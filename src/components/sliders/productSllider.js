@@ -37,6 +37,7 @@ const ProductSlider = () => {
         <div className="flex justify-center">
           <iframe
             // width="1200"
+            loading="lazy"
             height="600"
             src="https://www.youtube.com/embed/iGXCgvaEk6I"
             title="YouTube video player"
@@ -51,6 +52,7 @@ const ProductSlider = () => {
         <div className="flex justify-center">
           <iframe
             // width="1200"
+            loading="lazy"
             height="600"
             src="https://www.youtube.com/embed/iGXCgvaEk6I"
             title="YouTube video player"

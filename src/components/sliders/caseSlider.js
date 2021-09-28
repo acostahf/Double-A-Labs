@@ -42,6 +42,7 @@ const CaseSlider = () => {
           <div className="flex justify-center">
             <iframe
               // width="1200"
+              loading="lazy"
               height="600"
               src={content.vid}
               title="YouTube video player"
