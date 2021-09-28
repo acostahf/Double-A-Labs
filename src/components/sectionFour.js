@@ -4,7 +4,7 @@ import ProductSlider from "./sliders/productSllider"
 
 const SectionFour = () => {
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center pb-20">
       <div className="text-center px-20">
         <h3 className="text-sm font-bold text-nmr-lightBlue pb-2">
           {" "}
@@ -19,12 +19,14 @@ const SectionFour = () => {
         </div>
       </div>
 
-      <div className=" p-10 text-center">
+      <div className=" p-10 pb-20 text-center">
         <CaseSlider />
       </div>
       <div>
         <div className="text-center p-10">
-          <h1 className="font-black text-4xl pb-5">Production Services</h1>
+          <h1 className="font-black text-4xl pb-5">
+            Making Your Behind the <br /> Scenes Dreams Come to Life
+          </h1>
           <h1 className="text-gray-400 text-md">
             With our production experts, we can enrich your world by providing a
             depth of content to support your brand.

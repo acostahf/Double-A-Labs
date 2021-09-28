@@ -18,7 +18,7 @@ const IndexPage = () => (
     <Seo title="Home" />
     <Hero />
     <SectionOne />
-    <div className="bg-secTwo bg-no-repeat">
+    <div className="bg-secTwo bg-cover bg-no-repeat">
       <SectionTwo />
       {/* <SectionThree /> */}
       <SectionFour />

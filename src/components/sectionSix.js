@@ -5,9 +5,9 @@ const SectionSix = () => {
   return (
     <div className="p-20">
       <div className="text-center">
-        <h1 className="font-black text-4xl pb-5">Meet Our Leadership Team</h1>
+        <h1 className="font-black text-4xl pb-5">The A Team</h1>
         <p className="text-gray-500">
-          We’re a growing team of experts and thought leaders.
+          Meet our growing team of experts and thought leaders.
         </p>
       </div>
       <div className="">

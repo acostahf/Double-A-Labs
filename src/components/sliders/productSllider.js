@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css"
 
 const settings = {
   lazyLoad: true,
-  dots: true,
+  dots: false,
   infinite: true,
   autoplay: true,
   speed: 2000,

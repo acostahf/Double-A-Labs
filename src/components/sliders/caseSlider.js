@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css"
 
 const settings = {
   lazyLoad: true,
-  dots: true,
+  dots: false,
   infinite: true,
   autoplay: true,
   speed: 2000,
@@ -27,7 +27,7 @@ const data = [
   },
   {
     title: "Fan Experience",
-    sub: "Youtbue",
+    sub: "Youtube",
     body: "Popular streamers and youtube influencers were some of the first to interact within Double Space. Creators squared off against one another in different contests, voted on personal favorites, and viewed new exclusive content within the Double Space.",
     vid: "https://www.youtube.com/embed/pbp6ktKLcfM",
   },

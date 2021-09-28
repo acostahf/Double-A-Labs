@@ -1,11 +1,12 @@
 import React from "react"
+import Image from "../Image"
 
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 const settings = {
-  dots: true,
+  dots: false,
   infinite: true,
   autoplay: true,
   speed: 500,
@@ -54,13 +55,18 @@ const data = [
 const TeamSlider = () => {
   return (
     <div className="">
-      <Slider {...settings}>
+      <Slider {...settings} className="">
         {data.map(content => (
-          <div className="p-5">
-            <div className="shadow-xl rounded-lg p-10 bg-white bg-cardG bg-no-repeat bg-right-bottom">
+          <div className="p-5 py-20">
+            <div className="shadow-xl rounded-lg overflow-y-auto  h-500 p-10 bg-white bg-cardG bg-no-repeat bg-right-bottom">
               <div className="flex pb-10">
-                <div className="bg-blue-600 w-1/4">
-                  <h1>{content.img}</h1>
+                <div className=" w-1/4">
+                  <Image
+                    src="profilePic.png"
+                    className=""
+                    // style={{ quality: 100, width: 100, height: 100 }}
+                    alt="computer image"
+                  />
                 </div>
                 <div className="text-left w-3/4 px-5">
                   <h1 className="text-xl font-black bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue">
@@ -69,7 +75,7 @@ const TeamSlider = () => {
                   <h1>{content.occ} </h1>
                 </div>
               </div>
-              <div className="">
+              <div className="flex items-stretch text-sm">
                 <p>{content.body}</p>
               </div>
               <div>
