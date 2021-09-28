@@ -1,6 +1,7 @@
 import React from "react"
 import mic from "../images/mic.png"
 import Image from "../components/Image"
+import SectionFour from "./sectionFour"
 
 const data = [
   {
@@ -31,7 +32,7 @@ const data = [
 const SectionTwo = () => {
   return (
     <div>
-      <div className="">
+      <div>
         <div className="flex flex-wrap p-20">
           {data.map(content => (
             <div className="w-1/2 p-10">
@@ -50,11 +51,11 @@ const SectionTwo = () => {
           </button>
         </div>
       </div>
-      <div className="text-center pb-10 ">
+      {/* <div className="text-center pb-10 ">
         <h1 className="font-bold text-4xl ">
           Connecting <br /> Entertainment and Enterprise
         </h1>
-      </div>
+      </div> */}
     </div>
   )
 }

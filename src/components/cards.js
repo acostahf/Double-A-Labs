@@ -5,7 +5,7 @@ const Cards = () => {
     <div>
       <div className="grid grid-cols-2 p-20 ">
         <div className="flex justify-center flex-grow  px-20">
-          <div className="p-10 rounded-lg shadow-lg  ">
+          <div className="p-10 rounded-lg shadow-lg bg-white bg-group bg-no-repeat bg-right-top">
             <h1 className="text-2xl font-bold text-nmr-darkBlue pb-10">
               Our Mission
             </h1>
@@ -20,7 +20,7 @@ const Cards = () => {
           </div>
         </div>
         <div className="flex justify-center flex-grow  px-20">
-          <div className="p-10 rounded-lg shadow-lg ">
+          <div className="p-10 rounded-lg shadow-lg bg-white bg-group bg-no-repeat bg-right-top">
             <h1 className="text-2xl font-bold text-nmr-lightBlue pb-10">
               Our Vision
             </h1>
