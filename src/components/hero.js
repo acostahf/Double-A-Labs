@@ -27,7 +27,7 @@ const Hero = () => {
           <Image
             src="computer.svg"
             className=""
-            style={{ quality: 100, width: 500 }}
+            style={{ quality: 100, width: 500, height: 400 }}
             alt="computer image"
           />
         </div>

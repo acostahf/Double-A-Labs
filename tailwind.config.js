@@ -6,7 +6,7 @@ module.exports = {
       backgroundImage: {
         footer: "url('../images/footer.png')",
         hero: "url('../images/hero@2x.svg')",
-        secTwo: "url('../images/secTwo.png')",
+        secTwo: "url('../images/secTwo.svg')",
         group: "url('../images/Group.png')",
         room: "url('../images/room.png')",
         secSnS: "url('../images/secSS.svg')",
