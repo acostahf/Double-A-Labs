@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="flex justify-start">
         <div className="items-center py-20 px-20">
           <Image
-            src="computer.png"
+            src="computer.svg"
             className=""
             style={{ quality: 100, width: 500 }}
             alt="computer image"
