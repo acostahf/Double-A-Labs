@@ -1,4 +1,6 @@
 import React from "react"
+import { useRef } from "react"
+import useIntersectionObserver from "@react-hook/intersection-observer"
 
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
@@ -46,22 +48,30 @@ const data = [
 ]
 
 const CaseSlider = () => {
+  const containerRef = useRef()
+  const lockRef = useRef(false)
+  const { isIntersecting } = useIntersectionObserver(containerRef)
+  if (isIntersecting && !lockRef.current) {
+    lockRef.current = true
+  }
   return (
     <Slider {...settings}>
       {data.map(content => (
         <div className="">
-          <div className="flex justify-center">
-            <iframe
-              // width="1200"
-              loading="lazy"
-              height="600"
-              src={content.vid}
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              className="rounded-xl w-11/12 "
-            ></iframe>
+          <div ref={containerRef} className="flex justify-center">
+            {lockRef.current && (
+              <iframe
+                // width="1200"
+                loading="lazy"
+                height="600"
+                src={content.vid}
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                className="rounded-xl w-11/12 "
+              ></iframe>
+            )}
           </div>
           <div className="px-20">
             <h1 className="pb-5 text-xl font-bold">{content.title}</h1>
