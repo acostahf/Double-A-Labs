@@ -28,33 +28,56 @@ const data = [
     img: "img",
     soc: "socials",
   },
+  {
+    name: "Dave Prout",
+    occ: " Sr. Director of Operations",
+    body: "Dave works alongside our other Dev Team leaders to innovate and create new technologies for Double A Labs. He has worked with over 20 game titles that have shipped on console, desktop, mobile and VR including Doom 4, Halo 4, Call of Duty: Finest Hour and Call of Duty: Ghosts. The projects that he has led and contributed on  have grossed over $1 billion in sales throughout his career. Dave has worked with a plethora of successful gaming focused startups before joining the Double A team and brings strategic knowledge and an analytical approach to the team.",
+    img: "img",
+    soc: "socials",
+  },
+  {
+    name: "Chris Dreyer",
+    occ: "VP of Business Development",
+    body: "Chris Dreyer has worked at the cross-section of platforms and digital content for 12+ years. Chris’ ability to identify strategic opportunities, has resulted in key partnerships with platforms (Apple, Google), brands and hardware manufacturers. While spearheading EA’s mobile publishing efforts, Chris oversaw $600M in revenue, while successfully connecting the biggest brands in gaming with millions of players across the globe.",
+    img: "img",
+    soc: "socials",
+  },
+  {
+    name: "Ahna Boley",
+    occ: "VP of Customer Success",
+    body: "Ahna is one of the first Double A Labs employees. Having started at the company as an event producer, she currently leads the production team, who are the masterminds on the ground and in the moment that make brands’ experiences successful. Starting her professional career in marketing/events for environmental engineering consultants, she uses both her analytical and creative side to bridge the gap between production, technology, and how they compliment each other.",
+    img: "img",
+    soc: "socials",
+  },
 ]
 
 const TeamSlider = () => {
   return (
-    <Slider {...settings} className="bg-blue-600">
-      {data.map(content => (
-        <div className="p-5 bg-red-400 ">
-          <div className="shadow-xl rounded-lg p-10 flex flex-grow flex-col ">
-            <div className="flex pb-10">
-              <div className="bg-blue-600 w-1/4 ">
-                <h1>{content.img}</h1>
+    <div className="px-20">
+      <Slider {...settings}>
+        {data.map(content => (
+          <div className="p-5 ">
+            <div className="shadow-xl rounded-lg p-10">
+              <div className="flex pb-10">
+                <div className="bg-blue-600 w-1/4">
+                  <h1>{content.img}</h1>
+                </div>
+                <div className="text-left w-3/4 px-5">
+                  <h1 className="text-xl font-black ">{content.name}</h1>
+                  <h1>{content.occ} </h1>
+                </div>
               </div>
-              <div className="text-left w-3/4 px-5">
-                <h1 className="text-xl font-black ">{content.name}</h1>
-                <h1>{content.occ} </h1>
+              <div className="h-60">
+                <p>{content.body}</p>
               </div>
-            </div>
-            <div>
-              <p>{content.body}</p>
-            </div>
-            <div>
-              <h1>{content.soc}</h1>
+              <div>
+                <h1>{content.soc}</h1>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </Slider>
+        ))}
+      </Slider>
+    </div>
   )
 }
 
