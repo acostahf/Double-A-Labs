@@ -5,6 +5,12 @@ module.exports = {
     extend: {
       backgroundImage: {
         footer: "url('../images/footer.png')",
+        hero: "url('../images/heroBg.png')",
+        secTwo: "url('../images/secTwo.png')",
+        group: "url('../images/Group.png')",
+        room: "url('../images/room.png')",
+        secSnS: "url('../images/secSnS.png')",
+        cardG: "url('../images/cardG.png')",
       },
       colors: {
         nmr: {
@@ -13,7 +19,8 @@ module.exports = {
           darkBlue: "#1B7AA8",
           lightGreen: "#05BE9B",
           liteblue: "#00A6A0",
-          grey: "##6C757D",
+          grey: "#6C757D",
+          bgBlue: "#F2F6FF",
         },
       },
       boxShadow: {

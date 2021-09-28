@@ -1,6 +1,7 @@
 import React from "react"
 import mic from "../images/mic.png"
 import Image from "../components/Image"
+import SectionFour from "./sectionFour"
 
 const data = [
   {
@@ -30,8 +31,8 @@ const data = [
 ]
 const SectionTwo = () => {
   return (
-    <div>
-      <div className="">
+    <div className="bg-secTwo">
+      <div>
         <div className="flex flex-wrap p-20">
           {data.map(content => (
             <div className="w-1/2 p-10">
@@ -55,6 +56,7 @@ const SectionTwo = () => {
           Connecting <br /> Entertainment and Enterprise
         </h1>
       </div>
+      <SectionFour />
     </div>
   )
 }

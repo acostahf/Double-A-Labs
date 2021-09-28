@@ -20,10 +20,12 @@ const IndexPage = () => (
     <SectionOne />
     <SectionTwo />
     <SectionThree />
-    <SectionFour />
+    {/* <SectionFour /> */}
     <SectionFive />
-    <SectionSix />
-    <SectionSeven />
+    <div className="bg-secSnS bg-cover">
+      <SectionSix />
+      <SectionSeven />
+    </div>
   </Layout>
 )
 

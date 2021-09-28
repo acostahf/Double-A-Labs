@@ -3,8 +3,8 @@ import Cards from "./cards"
 
 const SectionFive = () => {
   return (
-    <div>
-      <div className="text-center px-20">
+    <div className="bg-nmr-bgBlue">
+      <div className="text-center p-20 ">
         <h1 className="text-4xl font-black p-5">Our Values</h1>
         <p className="px-40 text-gray-400 text-md">
           Double Space Experience provides a unique way to interact with your

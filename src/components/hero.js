@@ -3,7 +3,7 @@ import computerImg from "../images/computer.png"
 
 const Hero = () => {
   return (
-    <div className=" grid grid-cols-2">
+    <div className=" grid grid-cols-2 bg-hero bg-contain bg-no-repeat">
       <div className="py-20 pl-20 pr-40">
         <h1 className="text-4xl font-bold">
           We are on a Mission <br /> to make B2B

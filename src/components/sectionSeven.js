@@ -39,8 +39,8 @@ const SectionSeven = () => {
           </div>
         </form>
       </div>
-      <div className="flex justify-center items-center">
-        <div>image goes here</div>
+      <div className="flex justify-center items-center bg-room">
+        <div className=""></div>
       </div>
     </div>
   )

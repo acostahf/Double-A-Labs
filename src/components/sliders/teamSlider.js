@@ -9,7 +9,7 @@ const settings = {
   infinite: true,
   autoplay: true,
   speed: 500,
-  slidesToShow: 2,
+  slidesToShow: 3,
   slidesToScroll: 1,
 }
 
@@ -53,11 +53,11 @@ const data = [
 
 const TeamSlider = () => {
   return (
-    <div className="px-20">
+    <div className="">
       <Slider {...settings}>
         {data.map(content => (
-          <div className="p-5 ">
-            <div className="shadow-xl rounded-lg p-10">
+          <div className="p-5">
+            <div className="shadow-xl rounded-lg p-10 bg-white bg-cardG bg-no-repeat bg-right-bottom">
               <div className="flex pb-10">
                 <div className="bg-blue-600 w-1/4">
                   <h1>{content.img}</h1>
@@ -67,7 +67,7 @@ const TeamSlider = () => {
                   <h1>{content.occ} </h1>
                 </div>
               </div>
-              <div className="h-60">
+              <div className="">
                 <p>{content.body}</p>
               </div>
               <div>
