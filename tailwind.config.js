@@ -5,11 +5,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         footer: "url('../images/footer.png')",
-        hero: "url('../images/heroBg.png')",
+        hero: "url('../images/hero@2x.svg')",
         secTwo: "url('../images/secTwo.png')",
         group: "url('../images/Group.png')",
         room: "url('../images/room.png')",
-        secSnS: "url('../images/secSnS.png')",
+        secSnS: "url('../images/secSS.svg')",
         cardG: "url('../images/cardG.png')",
         dots: "url('../images/dots.png')",
       },
