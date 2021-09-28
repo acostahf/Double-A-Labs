@@ -18,19 +18,19 @@ const data = [
     title: "Sales Enablement",
     sub: "Dell - Train The Trainer",
     body: "Dell Sales Representatives were taken through a variety of spaces showcasing upcoming product launches and hardware improvements ahead of Black Friday. Sales Reps were taken through scheduling sessions and had hands-on interaction with the new products.",
-    // vid: "https://www.youtube.com/embed/iGXCgvaEk6I",
+    vid: "https://www.youtube.com/embed/iGXCgvaEk6I",
   },
   {
     title: "Fan Experience",
     sub: "Youtbue",
     body: "Popular streamers and youtube influencers were some of the first to interact within Double Space. Creators squared off against one another in different contests, voted on personal favorites, and viewed new exclusive content within the Double Space.",
-    // vid: "https://www.youtube.com/embed/pbp6ktKLcfM",
+    vid: "https://www.youtube.com/embed/pbp6ktKLcfM",
   },
   {
     title: "Training & Instruction",
     sub: "The Kindness Campaign",
     body: "A Double Space was created around an anti-bullying campaign put on by The Kindness Campaign. Students were tasked with exploring the treehouse and along the way observed anti-bullying content, played related mini games, and unlocked secret rewards while collaborating with their peers!",
-    // vid: "https://www.youtube.com/embed/DYcxd8g0REc",
+    vid: "https://www.youtube.com/embed/DYcxd8g0REc",
   },
 ]
 
@@ -40,7 +40,7 @@ const CaseSlider = () => {
       {data.map(content => (
         <div className="p-20">
           <div className="flex justify-center">
-            {/* <iframe
+            <iframe
               // width="1200"
               height="600"
               src={content.vid}
@@ -49,7 +49,7 @@ const CaseSlider = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
               className="rounded-xl w-11/12 "
-            ></iframe> */}
+            ></iframe>
           </div>
           <div className="p-10">
             <h1 className="pb-5 text-xl font-bold">{content.title}</h1>

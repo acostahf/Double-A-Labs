@@ -35,16 +35,16 @@ const ProductSlider = () => {
     <Slider {...settings}>
       <div className="p-20">
         <div className="flex justify-center">
-          {/* <iframe
+          <iframe
             // width="1200"
             height="600"
-            // src="https://www.youtube.com/embed/iGXCgvaEk6I"
+            src="https://www.youtube.com/embed/iGXCgvaEk6I"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             className="rounded-xl w-11/12 "
-          ></iframe> */}
+          ></iframe>
         </div>
       </div>
       <div className="p-20">
@@ -52,7 +52,7 @@ const ProductSlider = () => {
           <iframe
             // width="1200"
             height="600"
-            // src="https://www.youtube.com/embed/iGXCgvaEk6I"
+            src="https://www.youtube.com/embed/iGXCgvaEk6I"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
