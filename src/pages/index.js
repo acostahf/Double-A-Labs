@@ -18,11 +18,13 @@ const IndexPage = () => (
     <Seo title="Home" />
     <Hero />
     <SectionOne />
-    <SectionTwo />
-    <SectionThree />
-    {/* <SectionFour /> */}
+    <div className="bg-secTwo bg-no-repeat">
+      <SectionTwo />
+      {/* <SectionThree /> */}
+      <SectionFour />
+    </div>
     <SectionFive />
-    <div className="bg-secSnS bg-cover">
+    <div className="bg-secSnS bg-cover bg-no-repeat">
       <SectionSix />
       <SectionSeven />
     </div>

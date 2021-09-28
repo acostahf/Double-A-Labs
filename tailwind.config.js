@@ -11,6 +11,7 @@ module.exports = {
         room: "url('../images/room.png')",
         secSnS: "url('../images/secSnS.png')",
         cardG: "url('../images/cardG.png')",
+        dots: "url('../images/dots.png')",
       },
       colors: {
         nmr: {

@@ -2,7 +2,7 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <div className="flex justify-center p-20 bg-footer bg-bottom  bg-no-repeat">
+    <div className="flex justify-center p-20 bg-footer bg-bottom  bg-no-repeat bg-cover">
       <div className="text-white">
         <div>icon</div>
         <h1>DOUBLE A LABS</h1>

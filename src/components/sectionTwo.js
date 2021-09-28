@@ -31,7 +31,7 @@ const data = [
 ]
 const SectionTwo = () => {
   return (
-    <div className="bg-secTwo">
+    <div>
       <div>
         <div className="flex flex-wrap p-20">
           {data.map(content => (
@@ -51,12 +51,11 @@ const SectionTwo = () => {
           </button>
         </div>
       </div>
-      <div className="text-center pb-10 ">
+      {/* <div className="text-center pb-10 ">
         <h1 className="font-bold text-4xl ">
           Connecting <br /> Entertainment and Enterprise
         </h1>
-      </div>
-      <SectionFour />
+      </div> */}
     </div>
   )
 }

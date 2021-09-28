@@ -63,7 +63,9 @@ const TeamSlider = () => {
                   <h1>{content.img}</h1>
                 </div>
                 <div className="text-left w-3/4 px-5">
-                  <h1 className="text-xl font-black ">{content.name}</h1>
+                  <h1 className="text-xl font-black bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue">
+                    {content.name}
+                  </h1>
                   <h1>{content.occ} </h1>
                 </div>
               </div>

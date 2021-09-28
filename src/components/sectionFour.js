@@ -13,10 +13,8 @@ const SectionFour = () => {
         <h1 className="text-4xl font-black pb-5">Case Studies</h1>
         <div className="px-36 ">
           <p className="text-gray-400 text-md">
-            Double Space Experience provides a unique way to interact with your
-            audience. A place where you can natively broadcast video, conduct
-            interviews, and hang with friends using spatial audio to give you an
-            immersive experience.
+            A deeper look into some of our most popular spaces with an emphasis
+            on the data that drives these spaces.
           </p>
         </div>
       </div>
