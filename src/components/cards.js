@@ -3,8 +3,8 @@ import React from "react"
 const Cards = () => {
   return (
     <div>
-      <div className="grid grid-cols-2 p-20 ">
-        <div className="flex justify-center flex-grow  px-20">
+      <div className="grid grid-cols-2 p-20 gap-20 ">
+        <div className="grid ">
           <div className="p-10 rounded-lg shadow-lg bg-white bg-group bg-no-repeat bg-right-top">
             <h1 className="text-2xl font-bold text-nmr-darkBlue pb-10">
               Our Mission
@@ -19,7 +19,7 @@ const Cards = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center flex-grow  px-20">
+        <div className="grid">
           <div className="p-10 rounded-lg shadow-lg bg-white bg-group bg-no-repeat bg-right-top">
             <h1 className="text-2xl font-bold text-nmr-lightBlue pb-10">
               Our Vision
