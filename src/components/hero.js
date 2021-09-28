@@ -1,5 +1,5 @@
 import React from "react"
-import computerImg from "../images/computer.png"
+import Image from "../components/Image"
 
 const Hero = () => {
   return (
@@ -24,7 +24,12 @@ const Hero = () => {
       </div>
       <div className="flex justify-start">
         <div className="items-center py-20 px-20">
-          <img src={computerImg} />
+          <Image
+            src="computer.png"
+            className=""
+            style={{ quality: 100, width: 500 }}
+            alt="computer image"
+          />
         </div>
       </div>
     </div>
