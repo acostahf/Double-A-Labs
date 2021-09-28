@@ -5,12 +5,17 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 const settings = {
+  lazyLoad: true,
   dots: true,
   infinite: true,
   autoplay: true,
-  speed: 1000,
+  speed: 2000,
   slidesToShow: 1,
   slidesToScroll: 1,
+  centerPadding: "200px",
+  slidesToShow: 1,
+  // className: "center",
+  centerMode: true,
 }
 
 const data = [
@@ -33,7 +38,7 @@ const data = [
 const ProductSlider = () => {
   return (
     <Slider {...settings}>
-      <div className="p-20">
+      <div className="">
         <div className="flex justify-center">
           <iframe
             // width="1200"
@@ -48,7 +53,23 @@ const ProductSlider = () => {
           ></iframe>
         </div>
       </div>
-      <div className="p-20">
+      <div className="">
+        <div className="flex justify-center">
+          <iframe
+            // width="1200"
+            loading="lazy"
+            height="600"
+            src="https://www.youtube.com/embed/iGXCgvaEk6I"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            className="rounded-xl w-11/12 "
+          ></iframe>
+        </div>
+      </div>
+
+      <div className="">
         <div className="flex justify-center">
           <iframe
             // width="1200"

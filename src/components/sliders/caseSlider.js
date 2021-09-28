@@ -5,12 +5,17 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 const settings = {
+  lazyLoad: true,
   dots: true,
   infinite: true,
   autoplay: true,
-  speed: 1000,
+  speed: 2000,
   slidesToShow: 1,
   slidesToScroll: 1,
+  centerPadding: "200px",
+  slidesToShow: 1,
+  // className: "center",
+  centerMode: true,
 }
 
 const data = [
@@ -32,13 +37,19 @@ const data = [
     body: "A Double Space was created around an anti-bullying campaign put on by The Kindness Campaign. Students were tasked with exploring the treehouse and along the way observed anti-bullying content, played related mini games, and unlocked secret rewards while collaborating with their peers!",
     vid: "https://www.youtube.com/embed/DYcxd8g0REc",
   },
+  {
+    title: "Training & Instruction",
+    sub: "The Kindness Campaign",
+    body: "A Double Space was created around an anti-bullying campaign put on by The Kindness Campaign. Students were tasked with exploring the treehouse and along the way observed anti-bullying content, played related mini games, and unlocked secret rewards while collaborating with their peers!",
+    vid: "https://www.youtube.com/embed/DYcxd8g0REc",
+  },
 ]
 
 const CaseSlider = () => {
   return (
     <Slider {...settings}>
       {data.map(content => (
-        <div className="p-20">
+        <div className="">
           <div className="flex justify-center">
             <iframe
               // width="1200"
@@ -52,7 +63,7 @@ const CaseSlider = () => {
               className="rounded-xl w-11/12 "
             ></iframe>
           </div>
-          <div className="p-10">
+          <div className="px-20">
             <h1 className="pb-5 text-xl font-bold">{content.title}</h1>
             <h1 className="pb-10 bg-right-bottomtext-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue  ">
               {content.sub}
