@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
   <header className="bg-white shadow-2xl">
     <div className="container px-10 py-4 flex mx-auto justify-between items-center ">
       <div className="flex items-center gap-5">
-        <Image src="logo.png" className="w-10" alt="Logo" />
+        <Image src="logo.png" className="w-10" alt="" />
         <h1>
           <Link to="/" className="text-black font-bold uppercase ">
             {siteTitle}
