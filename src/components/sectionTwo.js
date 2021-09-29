@@ -1,32 +1,30 @@
 import React from "react"
-import mic from "../images/mic.png"
 import Image from "../components/Image"
-import SectionFour from "./sectionFour"
 
 const data = [
   {
-    title: "Spatial Audio",
+    title: "Real Time Communication",
     content:
-      "Create realistic meeting scenarios within your space with Spatial Audio. Positioning your avatar closer or further away from others will decide your engagement level in a conversation  ",
-    img: { mic },
+      "Communicate with others using video chat, text, or your favorite emojis. Spatial audio allows you to only hear the conversation of those nearby. ",
+    img: "board.svg",
   },
   {
-    title: "Interactivity",
+    title: "Rooms for Any Use Case",
     content:
-      "Interactivity is the best way for people to learn and remember. Play Games, Vote on Polls, and Collect Achievements and Prizes",
-    img: {},
+      "Any hi-res image can be used for a room setting. Whether it’s corporate office, or pub to host trivia, a simple image is all it takes.",
+    img: "controller.svg",
   },
   {
-    title: "Broadcast Natively",
+    title: "Fun Way To Engage & Interact",
     content:
-      "Real time video chat with built in interactive features. Voice your opinion with emojis, overlay a space with content or videos, or hop into a 1 on 1 meeting room",
-    img: {},
+      "Any content can be added to a room with just a few clicks. Videos, livestream games, live polls, coupons, you name it, it can be done.    ",
+    img: "floppy.svg",
   },
   {
-    title: "Data & Accessibility",
+    title: "Accessibility & Data",
     content:
-      "Available on both computer and mobile. Web Based no Software needed. With measurable data and customizable tracking take control of your workspace",
-    img: {},
+      "No download necessary.  All you need is a PC or mobile device and a web browser.  So literally, almost ANYONE can join.  We also offer data and analytics so you can see how your space is performing.",
+    img: "mic.svg",
   },
 ]
 const SectionTwo = () => {
@@ -36,8 +34,15 @@ const SectionTwo = () => {
         <div className="flex flex-wrap p-20">
           {data.map(content => (
             <div className="w-1/2 p-10">
-              {/* <Image src="mic.png" className="" alt="Sunset Image" /> */}
-              <h1 className="font-bold text-xl">{content.title}</h1>
+              <div className="flex gap-4">
+                <Image
+                  src={content.img}
+                  className=""
+                  alt="mic"
+                  style={{ quality: 100, width: 30, height: 30 }}
+                />
+                <h1 className="font-bold text-xl">{content.title}</h1>
+              </div>
               <p className="text-gray-400 text-sm">{content.content}</p>
             </div>
           ))}
