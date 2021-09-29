@@ -2,12 +2,12 @@ import React from "react"
 
 const SectionOne = () => {
   return (
-    <div className="flex justify-center flex-col text-center p-10 ">
+    <div className="flex justify-center flex-col text-center lg:p-10 ">
       <h6 className="text-nmr-lightBlue font-bold text-sm">
         A PRODUCT BY DOUBLE A LABS
       </h6>
       <h1 className="text-4xl font-black pb-5">Double Space</h1>
-      <div className="px-40">
+      <div className="lg:px-40 px-5">
         <p className="text-gray-400">
           Double Space Experience provides a unique way to interact with your
           audience. A place where you can natively broadcast video, conduct

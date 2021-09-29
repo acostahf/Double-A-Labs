@@ -12,7 +12,7 @@ const SectionFour = () => {
           A PRODUCT BY DOUBE A LABS
         </h3>
         <h1 className="text-4xl font-black pb-5">Case Studies</h1>
-        <div className="px-36 ">
+        <div className="lg:px-36 ">
           <p className="text-gray-400 text-md">
             A deeper look into some of our most popular spaces with an emphasis
             on the data that drives these spaces.

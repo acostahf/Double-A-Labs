@@ -2,11 +2,11 @@ import React from "react"
 
 const SectionSeven = () => {
   return (
-    <div className="grid grid-cols-2">
-      <div className="p-20 pr-1">
-        <form className="flex flex-col   ">
-          <div className="pb-3">
-            <h1 className="text-4xl font-extrabold pb-3">
+    <div className="grid lg:grid-cols-2">
+      <div className=" p-5 lg:p-20 lg:pr-1">
+        <form className="flex flex-col lg:text-left text-center">
+          <div className="pb-3 text-center lg:text-left">
+            <h1 className="text-4xl font-extrabold pb-3 ">
               Start Building Your Own World in Minutes{" "}
             </h1>
             <p className="text-gray-400">

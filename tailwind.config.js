@@ -13,6 +13,8 @@ module.exports = {
         cardG: "url('../images/cardG.png')",
         dots: "url('../images/dots.png')",
         nodes: "url('../images/techynodes2.svg')",
+        comuter: "url('../images/computer.svg')",
+        arrow: "url('../images/arrow.svg')",
       },
       colors: {
         nmr: {
