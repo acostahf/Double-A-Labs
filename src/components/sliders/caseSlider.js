@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 const settings = {
-  lazyLoad: true,
+  // lazyLoad: true,
   dots: false,
   infinite: true,
   autoplay: true,
@@ -39,15 +39,11 @@ const data = [
     body: "A Double Space was created around an anti-bullying campaign put on by The Kindness Campaign. Students were tasked with exploring the treehouse and along the way observed anti-bullying content, played related mini games, and unlocked secret rewards while collaborating with their peers!",
     vid: "https://www.youtube.com/embed/DYcxd8g0REc",
   },
-  {
-    title: "Training & Instruction",
-    sub: "The Kindness Campaign",
-    body: "A Double Space was created around an anti-bullying campaign put on by The Kindness Campaign. Students were tasked with exploring the treehouse and along the way observed anti-bullying content, played related mini games, and unlocked secret rewards while collaborating with their peers!",
-    vid: "https://www.youtube.com/embed/DYcxd8g0REc",
-  },
 ]
 
 const CaseSlider = () => {
+  // const [ref, setRef] = useState()
+  // const { isIntersecting } = useIntersectionObserver(ref)
   const containerRef = useRef()
   const lockRef = useRef(false)
   const { isIntersecting } = useIntersectionObserver(containerRef)
@@ -55,34 +51,38 @@ const CaseSlider = () => {
     lockRef.current = true
   }
   return (
-    <Slider {...settings}>
-      {data.map(content => (
-        <div className="">
-          <div ref={containerRef} className="flex justify-center">
+    <div ref={containerRef}>
+      <Slider {...settings}>
+        {data.map(content => (
+          <div className="flex justify-center">
             {lockRef.current && (
               <iframe
                 // width="1200"
-                loading="lazy"
                 height="600"
                 src={content.vid}
                 title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                frameBorder="0"
+                allowFullScreen
                 className="rounded-xl w-11/12 "
               ></iframe>
             )}
           </div>
-          <div className="px-20">
-            <h1 className="pb-5 text-xl font-bold">{content.title}</h1>
-            <h1 className="pb-10 bg-right-bottomtext-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue  ">
-              {content.sub}
-            </h1>
-            <h1>{content.body}</h1>
-          </div>
+        ))}
+      </Slider>
+      <div>
+        <div className="grid grid-cols-3 pt-20 text-left ">
+          {data.map(content => (
+            <div className="px-10 flex flex-col">
+              <h1 className="pb-2 text-2xl font-bold ">{content.title}</h1>
+              <h1 className="pb-5 bg-right-bottomtext-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue">
+                {content.sub}
+              </h1>
+              <h1>{content.body}</h1>
+            </div>
+          ))}
         </div>
-      ))}
-    </Slider>
+      </div>
+    </div>
   )
 }
 
