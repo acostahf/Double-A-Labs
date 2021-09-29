@@ -3,6 +3,7 @@ import Image from "../Image"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa"
 
 const settings = {
   dots: false,
@@ -74,11 +75,16 @@ const TeamSlider = () => {
                   <h1>{content.occ} </h1>
                 </div>
               </div>
-              <div className="flex items-stretch text-sm">
+              <div className="flex items-stretch text-sm pb-10">
                 <p>{content.body}</p>
               </div>
-              <div>
-                <h1>{content.soc}</h1>
+              <div className="flex gap-2">
+                <a className="text-blue-500 text-xl">
+                  <FaTwitter />
+                </a>
+                <a className="text-blue-500 text-xl">
+                  <FaLinkedinIn />
+                </a>
               </div>
             </div>
           </div>

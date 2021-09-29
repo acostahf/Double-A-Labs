@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "../components/Image"
+import { BsArrowRight } from "react-icons/bs"
 
 const Hero = () => {
   return (
@@ -17,8 +18,9 @@ const Hero = () => {
             results.
           </p>
 
-          <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5">
-            Try Your free Demo Now
+          <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5 flex items-center gap-2">
+            <h1>Try Your free Demo Now</h1>
+            <BsArrowRight className="text-xl" />
           </button>
         </div>
       </div>

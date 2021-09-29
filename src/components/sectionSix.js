@@ -1,5 +1,6 @@
 import React from "react"
 import TeamSlider from "./sliders/teamSlider"
+import { IoIosArrowForward } from "react-icons/io"
 
 const SectionSix = () => {
   return (
@@ -28,10 +29,11 @@ const SectionSix = () => {
             </div>
             <div className="flex justify-center items-center w-1/4">
               <div>
-                <button className="px-10 py-3 bg-white rounded-full ">
+                <button className="px-10 py-3 bg-white rounded-full flex items-center gap-4">
                   <h1 className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue ">
                     Join Now
                   </h1>
+                  <IoIosArrowForward className="text-nmr-darkBlue text-xl" />
                 </button>
               </div>
             </div>
