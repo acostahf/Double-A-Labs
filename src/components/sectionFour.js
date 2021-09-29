@@ -1,6 +1,7 @@
 import React from "react"
 import CaseSlider from "./sliders/caseSlider"
 import ProductSlider from "./sliders/productSllider"
+import { IoIosArrowForward } from "react-icons/io"
 
 const SectionFour = () => {
   return (
@@ -39,8 +40,9 @@ const SectionFour = () => {
         </div>
       </div>
       <div className="flex justify-center pb-20">
-        <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-full text-white py-3 px-5">
-          Contact Us To Explore
+        <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-full text-white py-3 px-5 flex items-center gap-2">
+          <h1>Contact Us To Explore</h1>
+          <IoIosArrowForward className="text-white text-xl" />
         </button>
       </div>
     </div>

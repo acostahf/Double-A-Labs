@@ -1,7 +1,18 @@
-import React from "react"
+import React, { useState } from "react"
 import Image from "../components/Image"
+import { BsArrowRight } from "react-icons/bs"
+import CModal from "../components/modal"
+import Modal, { setAppElement } from "react-modal"
 
-const Hero = () => {
+// Modal.setAppElement("#main")
+
+const Hero = ({ children }) => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  function toggleModal(value) {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <div className=" grid grid-cols-2 bg-hero bg-contain bg-no-repeat">
       <div className="flex justify-end p-20">
@@ -16,10 +27,21 @@ const Hero = () => {
             Providing innovative virtual <br /> solutions with measurable
             results.
           </p>
-
-          <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5">
-            Try Your free Demo Now
-          </button>
+          <div className="pb-5">
+            <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white  py-3 px-5">
+              Try Your free Demo Now
+            </button>
+          </div>
+          <div>
+            <button
+              onClick={toggleModal}
+              className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5 flex items-center gap-2"
+            >
+              Open Video
+              {/* <h1>Try Your free Demo Now</h1>
+            <BsArrowRight className="text-xl" /> */}
+            </button>
+          </div>
         </div>
       </div>
       <div className="flex justify-start">
@@ -32,6 +54,17 @@ const Hero = () => {
           />
         </div>
       </div>
+      <Modal
+        isOpen={isOpen}
+        onRequestClose={toggleModal}
+        ariaHideApp={false}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <CModal toggleModal={toggleModal} />
+      </Modal>
     </div>
   )
 }

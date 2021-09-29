@@ -1,5 +1,12 @@
 import React from "react"
 import Image from "../components/Image"
+import {
+  FaTwitter,
+  FaFacebookSquare,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa"
+
 const Footer = () => {
   return (
     <div className="flex justify-center p-20 bg-footer bg-bottom  bg-no-repeat bg-cover">
@@ -24,7 +31,12 @@ const Footer = () => {
             <a>Info@doublelabs.com</a>
           </div>
         </div>
-        <div> socials</div>
+        <div className="flex gap-10 text-lg">
+          <FaTwitter />
+          <FaFacebookSquare />
+          <FaLinkedin />
+          <FaYoutube />
+        </div>
       </div>
     </div>
   )
