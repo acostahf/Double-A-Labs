@@ -27,15 +27,21 @@ const Hero = ({ children }) => {
             Providing innovative virtual <br /> solutions with measurable
             results.
           </p>
-
-          <button
-            onClick={toggleModal}
-            className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5 flex items-center gap-2"
-          >
-            open
-            {/* <h1>Try Your free Demo Now</h1>
+          <div className="pb-5">
+            <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white  py-3 px-5">
+              Try Your free Demo Now
+            </button>
+          </div>
+          <div>
+            <button
+              onClick={toggleModal}
+              className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5 flex items-center gap-2"
+            >
+              Open Video
+              {/* <h1>Try Your free Demo Now</h1>
             <BsArrowRight className="text-xl" /> */}
-          </button>
+            </button>
+          </div>
         </div>
       </div>
       <div className="flex justify-start">
