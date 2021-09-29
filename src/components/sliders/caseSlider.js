@@ -42,8 +42,6 @@ const data = [
 ]
 
 const CaseSlider = () => {
-  // const [ref, setRef] = useState()
-  // const { isIntersecting } = useIntersectionObserver(ref)
   const containerRef = useRef()
   const lockRef = useRef(false)
   const { isIntersecting } = useIntersectionObserver(containerRef)
@@ -73,8 +71,10 @@ const CaseSlider = () => {
         <div className="grid grid-cols-3 pt-20 text-left ">
           {data.map(content => (
             <div className="px-10 flex flex-col">
-              <h1 className="pb-2 text-2xl font-bold ">{content.title}</h1>
-              <h1 className="pb-5 bg-right-bottomtext-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue">
+              <h1 className="pb-2 text-2xl font-bold border-b-2 border-nmr-liteblue ">
+                {content.title}
+              </h1>
+              <h1 className="pb-5 pt-2 bg-right-bottomtext-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue">
                 {content.sub}
               </h1>
               <h1>{content.body}</h1>
