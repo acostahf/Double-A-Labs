@@ -12,6 +12,7 @@ module.exports = {
         secSnS: "url('../images/secSS.svg')",
         cardG: "url('../images/cardG.png')",
         dots: "url('../images/dots.png')",
+        nodes: "url('../images/techynodes2.svg')",
       },
       colors: {
         nmr: {

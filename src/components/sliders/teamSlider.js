@@ -1,6 +1,5 @@
 import React from "react"
 import Image from "../Image"
-
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -19,35 +18,35 @@ const data = [
     name: "Amber Allen",
     occ: "CEO & Founder Disney, Warner Bros., Riot Games",
     body: " Amber Allan is a pioneer in the experiential technology and immersive technologies fields. With her 15+ years of experience with companies such as Disney, Warner Bros., Riot Games, Amber used her knowledge of Technology, understanding audiences and brand engagement to help launch some of the largest technology companies such as Dell, SXSW, Comic-Con,E3, HTC, Twitch, Magic Leap, YouTube, Discord and more.",
-    img: "img",
+    img: "Amber.png",
     soc: "socials",
   },
   {
     name: "Asena Atalik",
     occ: "COO, Electronic Arts, Mattel, Bowman Capital",
     body: "Asena Atalik brings 20 years of experience in executive and leadership roles across operations, strategy, finance, corporate development and investment management. Asena's prior experience spans across the hedge fund industry, as well as Electronic Arts and Mattel.",
-    img: "img",
+    img: "Asena.png",
     soc: "socials",
   },
   {
     name: "Dave Prout",
     occ: " Sr. Director of Operations",
     body: "Dave works alongside our other Dev Team leaders to innovate and create new technologies for Double A Labs. He has worked with over 20 game titles that have shipped on console, desktop, mobile and VR including Doom 4, Halo 4, Call of Duty: Finest Hour and Call of Duty: Ghosts. The projects that he has led and contributed on  have grossed over $1 billion in sales throughout his career. Dave has worked with a plethora of successful gaming focused startups before joining the Double A team and brings strategic knowledge and an analytical approach to the team.",
-    img: "img",
+    img: "Dave.png",
     soc: "socials",
   },
   {
     name: "Chris Dreyer",
     occ: "VP of Business Development",
     body: "Chris Dreyer has worked at the cross-section of platforms and digital content for 12+ years. Chris’ ability to identify strategic opportunities, has resulted in key partnerships with platforms (Apple, Google), brands and hardware manufacturers. While spearheading EA’s mobile publishing efforts, Chris oversaw $600M in revenue, while successfully connecting the biggest brands in gaming with millions of players across the globe.",
-    img: "img",
+    img: "Chris.png",
     soc: "socials",
   },
   {
     name: "Ahna Boley",
     occ: "VP of Customer Success",
     body: "Ahna is one of the first Double A Labs employees. Having started at the company as an event producer, she currently leads the production team, who are the masterminds on the ground and in the moment that make brands’ experiences successful. Starting her professional career in marketing/events for environmental engineering consultants, she uses both her analytical and creative side to bridge the gap between production, technology, and how they compliment each other.",
-    img: "img",
+    img: "Ahna.png",
     soc: "socials",
   },
 ]
@@ -62,7 +61,7 @@ const TeamSlider = () => {
               <div className="flex pb-10">
                 <div className=" w-1/4">
                   <Image
-                    src="profilePic.png"
+                    src={content.img}
                     className=""
                     // style={{ quality: 100, width: 100, height: 100 }}
                     alt="computer image"

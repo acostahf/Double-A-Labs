@@ -22,19 +22,21 @@ const SectionFour = () => {
       <div className=" p-10 pb-20 text-center">
         <CaseSlider />
       </div>
-      <div>
-        <div className="text-center p-10">
-          <h1 className="font-black text-4xl pb-5">
-            Making Your Behind the <br /> Scenes Dreams Come to Life
-          </h1>
-          <h1 className="text-gray-400 text-md">
-            With our production experts, we can enrich your world by providing a
-            depth of content to support your brand.
-          </h1>
+      <div className="bg-nodes ">
+        <div>
+          <div className="text-center p-10">
+            <h1 className="font-black text-4xl pb-5">
+              Making Your Behind the <br /> Scenes Dreams Come to Life
+            </h1>
+            <h1 className="text-gray-400 text-md">
+              With our production experts, we can enrich your world by providing
+              a depth of content to support your brand.
+            </h1>
+          </div>
         </div>
-      </div>
-      <div className="p-10 text-center">
-        <ProductSlider />
+        <div className="p-10 text-center ">
+          <ProductSlider />
+        </div>
       </div>
       <div className="flex justify-center pb-20">
         <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-full text-white py-3 px-5">
