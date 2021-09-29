@@ -16,6 +16,7 @@ import SectionOne from "../components/sectionOne"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
+
     <Hero />
     <SectionOne />
     <div className="bg-secTwo bg-cover bg-no-repeat">
