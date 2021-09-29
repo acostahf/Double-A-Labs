@@ -57,7 +57,7 @@ const TeamSlider = () => {
     <div className="">
       <Slider {...settings} className="">
         {data.map(content => (
-          <div className="p-5 py-20">
+          <div key="card" className="p-5 py-20">
             <div className="shadow-xl rounded-lg overflow-y-auto  h-500 p-10 bg-white bg-cardG bg-no-repeat bg-right-bottom">
               <div className="flex pb-10">
                 <div className=" w-1/4">
