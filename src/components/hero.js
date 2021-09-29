@@ -14,19 +14,26 @@ const Hero = ({ children }) => {
   }
 
   return (
-    <div className=" grid grid-cols-2 bg-hero bg-contain bg-no-repeat">
-      <div className="flex justify-end p-20">
-        <div className="px-20">
+    <div className=" grid grid-cols-2 bg-hero bg-contain bg-no-repeat py-20">
+      <div className="flex justify-center py-20 pl-20">
+        <div className="">
           <h1 className="text-2xl font-bold">Through Immersive Experiences</h1>
           <h1 className="text-4xl font-bold">We are a Catalyst For</h1>
-          <h1 className="pb-10 text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-yellow-500  to-red-500">
+          <h1 className="text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-yellow-500  to-red-500">
             Human Connections
           </h1>
-
-          <p className="pb-10 text-xl">
-            Providing innovative virtual <br /> solutions with measurable
-            results.
-          </p>
+          <div className="flex items-center gap-20">
+            <p className="pb-10 text-xl">
+              Providing innovative virtual <br /> solutions with measurable
+              results.
+            </p>
+            <Image
+              src="arrow.svg"
+              className=""
+              style={{ quality: 100, width: 200, height: 200 }}
+              alt="computer image"
+            />
+          </div>
           <div className="pb-5">
             <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white  py-3 px-5">
               Try Your free Demo Now
@@ -44,8 +51,8 @@ const Hero = ({ children }) => {
           </div>
         </div>
       </div>
-      <div className="flex justify-start">
-        <div className="items-center py-20 px-20">
+      <div className="flex items-center">
+        <div className="">
           <Image
             src="computer.svg"
             className=""

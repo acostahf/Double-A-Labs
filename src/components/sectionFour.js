@@ -23,7 +23,7 @@ const SectionFour = () => {
       <div className=" p-10 pb-20 text-center">
         <CaseSlider />
       </div>
-      <div className="bg-nodes ">
+      <div className="bg-nodes bg-cover bg-no-repeat ">
         <div>
           <div className="text-center p-10">
             <h1 className="font-black text-4xl pb-5">
