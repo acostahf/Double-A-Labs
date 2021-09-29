@@ -10,7 +10,7 @@ const settings = {
   // lazyLoad: true,
   dots: false,
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   speed: 2000,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -18,6 +18,38 @@ const settings = {
   slidesToShow: 1,
   // className: "center",
   centerMode: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
+        centerMode: false,
+        centerPadding: "0px",
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false,
+        centerPadding: "0px",
+        dots: true,
+      },
+    },
+  ],
 }
 
 const data = [
@@ -56,12 +88,12 @@ const ProductSlider = () => {
             {lockRef.current && (
               <iframe
                 // width="1200"
-                height="600"
+                // height="600"
                 src={content.vid}
                 title="YouTube video player"
                 frameBorder="0"
                 allowFullScreen
-                className="rounded-xl w-11/12 "
+                className="rounded-xl w-11/12 lg:h-500"
               ></iframe>
             )}
           </div>

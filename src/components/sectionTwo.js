@@ -31,9 +31,9 @@ const SectionTwo = () => {
   return (
     <div>
       <div>
-        <div className="flex flex-wrap p-20">
+        <div className="flex flex-col lg:flex-row lg:flex-wrap lg:p-20">
           {data.map(content => (
-            <div className="w-1/2 p-10">
+            <div className="lg:w-1/2 p-10">
               <div className="flex gap-4">
                 <Image
                   src={content.img}
@@ -43,7 +43,9 @@ const SectionTwo = () => {
                 />
                 <h1 className="font-bold text-xl">{content.title}</h1>
               </div>
-              <p className="text-gray-400 text-sm">{content.content}</p>
+              <p className="text-gray-400 text-sm text-center lg:text-left">
+                {content.content}
+              </p>
             </div>
           ))}
         </div>

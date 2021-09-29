@@ -18,6 +18,38 @@ const settings = {
   slidesToShow: 1,
   // className: "center",
   centerMode: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
+        centerMode: false,
+        centerPadding: "0px",
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false,
+        centerPadding: "0px",
+        dots: true,
+      },
+    },
+  ],
 }
 
 const data = [
@@ -58,23 +90,25 @@ const CaseSlider = () => {
             {lockRef.current && (
               <iframe
                 // width="1200"
-                height="600"
+                // height="600"
                 src={content.vid}
                 title="YouTube video player"
                 frameBorder="0"
                 allowFullScreen
-                className="rounded-xl w-11/12 "
+                className="rounded-xl w-11/12 lg:h-500"
               ></iframe>
             )}
           </div>
         ))}
       </Slider>
       <div>
-        <div className="grid grid-cols-3 pt-20 text-left ">
+        <div className="grid lg:grid-cols-3 pt-20 text-left ">
           {data.map(content => (
-            <div className="px-10 flex flex-col">
-              <h1 className="pb-2 text-2xl font-bold ">{content.title}</h1>
-              <h1 className="pb-5 bg-right-bottomtext-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue">
+            <div className="lg:px-10 flex flex-col p-5">
+              <h1 className="pb-2 text-2xl font-bold border-b-2 border-nmr-liteblue ">
+                {content.title}
+              </h1>
+              <h1 className="pb-5 pt-2 bg-right-bottom text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue">
                 {content.sub}
               </h1>
               <h1>{content.body}</h1>

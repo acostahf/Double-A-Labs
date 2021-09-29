@@ -12,7 +12,7 @@ const SectionFour = () => {
           A PRODUCT BY DOUBE A LABS
         </h3>
         <h1 className="text-4xl font-black pb-5">Case Studies</h1>
-        <div className="px-36 ">
+        <div className="lg:px-36 ">
           <p className="text-gray-400 text-md">
             A deeper look into some of our most popular spaces with an emphasis
             on the data that drives these spaces.
@@ -23,7 +23,7 @@ const SectionFour = () => {
       <div className=" p-10 pb-20 text-center">
         <CaseSlider />
       </div>
-      <div className="bg-nodes ">
+      <div className="bg-nodes bg-cover bg-no-repeat ">
         <div>
           <div className="text-center p-10">
             <h1 className="font-black text-4xl pb-5">

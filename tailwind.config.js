@@ -8,11 +8,13 @@ module.exports = {
         hero: "url('../images/hero@2x.svg')",
         secTwo: "url('../images/secTwo.svg')",
         group: "url('../images/Group.png')",
-        room: "url('../images/room.png')",
+        room: "url('../images/bottomImage.png')",
         secSnS: "url('../images/secSS.svg')",
         cardG: "url('../images/cardG.png')",
         dots: "url('../images/dots.png')",
         nodes: "url('../images/techynodes2.svg')",
+        comuter: "url('../images/computer.svg')",
+        arrow: "url('../images/arrow.svg')",
       },
       colors: {
         nmr: {
