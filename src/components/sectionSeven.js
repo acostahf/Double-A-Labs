@@ -71,7 +71,7 @@ const SectionSeven = () => {
               type="text"
               onChange={handleChange}
               value={formState.phone}
-              phone="phone"
+              name="phone"
               placeholder="Phone"
               className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
             />
@@ -82,7 +82,7 @@ const SectionSeven = () => {
               type="text"
               onChange={handleChange}
               value={formState.company}
-              company="company"
+              name="company"
               placeholder="Your Company Name"
               className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
             />
