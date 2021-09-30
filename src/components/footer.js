@@ -22,9 +22,13 @@ const Footer = () => {
         <h1 className="font-bold pb-5">DOUBLE A LABS</h1>
         <div className="flex flex-col lg:flex-row gap-3 lg:gap-10 pb-5">
           <div>
-            <a href="https://doublealabs.com/privacy/">Prvacy</a>
-          </div>
-          <div>
+            <a
+              className="pr-3 lg:pr-10"
+              href="https://doublealabs.com/privacy/"
+            >
+              Prvacy
+            </a>
+
             <a href="https://doublealabs.com/terms/">Terms of use</a>
           </div>
           <div>
