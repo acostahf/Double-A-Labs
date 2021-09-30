@@ -15,7 +15,7 @@ const Hero = ({ children }) => {
   }
 
   return (
-    <div className=" grid lg:grid-cols-2 bg-hero bg-contain bg-no-repeat lg:py-20">
+    <div className=" grid lg:grid-cols-2 bg-hero bg-contain bg-no-repeat lg:py-20 py-10">
       <div className="flex flex-col justify-center p-5 lg:py-20 lg:pl-20">
         <div className="lg:bg-arrow lg:bg-no-repeat lg:bg-right-bottom">
           <h1 className="text-xl lg:text-2xl font-bold">
@@ -39,14 +39,14 @@ const Hero = ({ children }) => {
         </div>
       </div>
 
-      <div className="flex justify-start items-center ">
+      <div className="flex justify-start items-center  ">
         {/* <Image
             src="computer.svg"
             className=""
             style={{ quality: 100, width: 500, height: 400 }}
             alt="computer image"
           /> */}
-        <div className="text-white text-6xl bg-comuter bg-center bg-cover lg:bg-contain bg-no-repeat w-full h-3/4 flex justify-center items-center">
+        <div className="text-white text-6xl bg-comuter bg-center bg-cover lg:bg-contain bg-no-repeat w-full h-3/4 flex justify-center items-center py-40">
           <div>
             <BiPlayCircle onClick={toggleModal} />
           </div>
