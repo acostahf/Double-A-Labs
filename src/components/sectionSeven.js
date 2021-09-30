@@ -17,19 +17,19 @@ const SectionSeven = () => {
           <div className="pb-3">
             <input
               placeholder="First & Last Name"
-              className="border-solid border-2 rounded-lg py-3 px-10 w-3/4"
+              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-1/3"
             ></input>
           </div>
           <div className="pb-3">
             <input
               placeholder="Phone"
-              className="border-solid border-2 rounded-lg py-3 px-10 w-3/4"
+              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-1/3"
             ></input>
           </div>
           <div className="pb-3">
             <input
               placeholder="Your Company Name"
-              className="border-solid border-2 rounded-lg py-3 px-10 w-3/4"
+              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-1/3"
             ></input>
           </div>
           <div className="">

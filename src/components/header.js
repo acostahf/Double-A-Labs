@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
         </h1>
       </div>
       <div>
-        <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-md text-white py-2 px-10">
+        <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-md text-white py-2 px-5 lg:px-10 lg:text-base text-sm ">
           Request Demo
         </button>
       </div>

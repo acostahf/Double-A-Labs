@@ -35,7 +35,7 @@ const SectionFour = () => {
             </h1>
           </div>
         </div>
-        <div className="p-10 text-center ">
+        <div className="px-10 pb-10 text-center ">
           <ProductSlider />
         </div>
       </div>

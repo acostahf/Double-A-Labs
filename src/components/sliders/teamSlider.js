@@ -87,9 +87,9 @@ const TeamSlider = () => {
     <div className="">
       <Slider {...settings} className="">
         {data.map(content => (
-          <div key="card" className="p-5 py-20">
-            <div className="shadow-xl rounded-lg overflow-y-auto  h-500 p-10 bg-white bg-cardG bg-no-repeat bg-right-bottom">
-              <div className="flex pb-10">
+          <div key="card" className="px-5 py-20">
+            <div className="shadow-xl rounded-lg overflow-y-auto h-500 p-5 bg-white bg-cardG bg-no-repeat bg-right-bottom">
+              <div className="flex pb-5">
                 <div className=" w-1/4">
                   <Image
                     src={content.img}
@@ -102,10 +102,10 @@ const TeamSlider = () => {
                   <h1 className="text-xl font-black bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue">
                     {content.name}
                   </h1>
-                  <h1>{content.occ} </h1>
+                  <h1 className="text-sm">{content.occ} </h1>
                 </div>
               </div>
-              <div className="flex items-stretch text-sm pb-10">
+              <div className=" text-sm pb-10">
                 <p>{content.body}</p>
               </div>
               <div className="flex gap-2">
