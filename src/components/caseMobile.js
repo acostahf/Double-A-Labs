@@ -2,56 +2,6 @@ import React from "react"
 import { useRef } from "react"
 import useIntersectionObserver from "@react-hook/intersection-observer"
 
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-
-const settings = {
-  // lazyLoad: true,
-  dots: false,
-  infinite: true,
-  autoplay: true,
-  speed: 2000,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  centerPadding: "200px",
-  slidesToShow: 1,
-  // className: "center",
-  centerMode: true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        initialSlide: 1,
-        centerMode: false,
-        centerPadding: "0px",
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: false,
-        centerPadding: "0px",
-        dots: true,
-      },
-    },
-  ],
-}
-
 const data = [
   {
     title: "Sales Enablement",
@@ -73,7 +23,7 @@ const data = [
   },
 ]
 
-const CaseSlider = () => {
+const CaseMobile = () => {
   // const [ref, setRef] = useState()
   // const { isIntersecting } = useIntersectionObserver(ref)
   const containerRef = useRef()
@@ -84,27 +34,21 @@ const CaseSlider = () => {
   }
   return (
     <div ref={containerRef}>
-      <Slider {...settings} className="hidden">
-        {data.map(content => (
-          <div className="flex justify-center">
-            {lockRef.current && (
-              <iframe
-                // width="1200"
-                // height="600"
-                src={content.vid}
-                title="YouTube video player"
-                frameBorder="0"
-                allowFullScreen
-                className="rounded-xl w-11/12 lg:h-500"
-              ></iframe>
-            )}
-          </div>
-        ))}
-      </Slider>
-      <div>
-        <div className="grid lg:grid-cols-3 pt-20 text-left ">
-          {data.map(content => (
-            <div className="lg:px-10 flex flex-col p-5">
+      {data.map(content => (
+        <div className="flex flex-col justify-center">
+          {lockRef.current && (
+            <iframe
+              // width="1200"
+              // height="600"
+              src={content.vid}
+              title="YouTube video player"
+              frameBorder="0"
+              allowFullScreen
+              className="rounded-xl w-11/12 lg:h-500"
+            ></iframe>
+          )}
+          <div className="pb-5 text-left ">
+            <div className="flex flex-col p-5">
               <h1 className="pb-2 text-2xl font-bold border-b-2 border-nmr-liteblue ">
                 {content.title}
               </h1>
@@ -113,11 +57,11 @@ const CaseSlider = () => {
               </h1>
               <h1>{content.body}</h1>
             </div>
-          ))}
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   )
 }
 
-export default CaseSlider
+export default CaseMobile

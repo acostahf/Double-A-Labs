@@ -2,6 +2,7 @@ import React from "react"
 import CaseSlider from "./sliders/caseSlider"
 import ProductSlider from "./sliders/productSllider"
 import { IoIosArrowForward } from "react-icons/io"
+import CaseMobile from "./caseMobile"
 
 const SectionFour = () => {
   return (
@@ -20,8 +21,11 @@ const SectionFour = () => {
         </div>
       </div>
 
-      <div className=" p-10 pb-20 text-center">
+      <div className=" p-10 pb-20 text-center hidden lg:block">
         <CaseSlider />
+      </div>
+      <div className=" p-10 pb-20 text-center  lg:hidden">
+        <CaseMobile />
       </div>
       <div className="bg-nodes bg-cover bg-no-repeat ">
         <div>
