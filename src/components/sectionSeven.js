@@ -17,25 +17,27 @@ const SectionSeven = () => {
           <div className="pb-3">
             <input
               placeholder="First & Last Name"
-              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-1/3"
+              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
             ></input>
           </div>
           <div className="pb-3">
             <input
               placeholder="Phone"
-              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-1/3"
+              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
             ></input>
           </div>
           <div className="pb-3">
             <input
               placeholder="Your Company Name"
-              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-1/3"
+              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
             ></input>
           </div>
           <div className="">
-            <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue text-sm text-white rounded-lg py-4 px-10">
-              Get Started
-            </button>
+            <form action="mailto:info@doublealabs.com">
+              <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue text-sm text-white rounded-lg py-4 px-10">
+                Get Started
+              </button>
+            </form>
           </div>
         </form>
       </div>
