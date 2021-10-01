@@ -31,15 +31,15 @@ module.exports = {
           placeholder: `blurred`,
           quality: 50,
           breakpoints: [750, 1080, 1366, 1920],
-          backgroundColor: `transparent`
+          backgroundColor: `transparent`,
           tracedSVGOptions: {},
           blurredOptions: {},
           jpgOptions: {},
           pngOptions: {},
           webpOptions: {},
           avifOptions: {},
-        }
-      }
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
