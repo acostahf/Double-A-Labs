@@ -14,7 +14,6 @@ const Footer = () => {
         <div className="pb-5">
           <Image
             src="whiteLogo.svg"
-            className=""
             style={{ quality: 100, width: 30, height: 30 }}
             alt="computer image"
           />
@@ -36,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex gap-10 text-lg">
-          <a href="">
+          <a href="...">
             <FaTwitter />
           </a>
           <a href="https://www.facebook.com/doublealabs">

@@ -12,7 +12,7 @@ const settings = {
   infinite: true,
   autoplay: true,
   speed: 2000,
-  slidesToShow: 1,
+  // slidesToShow: 1,
   slidesToScroll: 1,
   centerPadding: "200px",
   slidesToShow: 1,
@@ -22,7 +22,7 @@ const settings = {
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 1,
+        // slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
         dots: false,
@@ -31,7 +31,7 @@ const settings = {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 1,
+        // slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 1,
         centerMode: false,
@@ -42,7 +42,7 @@ const settings = {
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
+        // slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: false,
         centerPadding: "0px",
@@ -57,19 +57,19 @@ const data = [
     title: "Sales Enablement",
     sub: "Dell - Train The Trainer",
     body: "Dell Sales Representatives were taken through a variety of spaces showcasing upcoming product launches and hardware improvements ahead of Black Friday. Sales Reps were taken through scheduling sessions and had hands-on interaction with the new products.",
-    vid: "https://www.youtube.com/embed/iGXCgvaEk6I",
+    vid: "https://youtube.com/embed/xu0rXT4MqpU",
   },
   {
     title: "Fan Experience",
     sub: "Youtube",
     body: "Popular streamers and youtube influencers were some of the first to interact within Double Space. Creators squared off against one another in different contests, voted on personal favorites, and viewed new exclusive content within the Double Space.",
-    vid: "https://www.youtube.com/embed/pbp6ktKLcfM",
+    vid: "https://youtube.com/embed/PaOuMq7yoJg",
   },
   {
     title: "Training & Instruction",
     sub: "The Kindness Campaign",
     body: "A Double Space was created around an anti-bullying campaign put on by The Kindness Campaign. Students were tasked with exploring the treehouse and along the way observed anti-bullying content, played related mini games, and unlocked secret rewards while collaborating with their peers!",
-    vid: "https://www.youtube.com/embed/DYcxd8g0REc",
+    vid: "https://youtube.com/embed/4Zix5saSVt8",
   },
 ]
 
@@ -84,9 +84,9 @@ const CaseSlider = () => {
   }
   return (
     <div ref={containerRef}>
-      <Slider {...settings} className="hidden">
+      <Slider {...settings}>
         {data.map(content => (
-          <div className="flex justify-center">
+          <div key={content.title} className="flex justify-center">
             {lockRef.current && (
               <iframe
                 // width="1200"
@@ -95,7 +95,7 @@ const CaseSlider = () => {
                 title="YouTube video player"
                 frameBorder="0"
                 allowFullScreen
-                className="rounded-xl w-11/12 lg:h-500"
+                className="rounded-xl w-11/12  lg:h-500"
               ></iframe>
             )}
           </div>
@@ -104,7 +104,7 @@ const CaseSlider = () => {
       <div>
         <div className="grid lg:grid-cols-3 pt-20 text-left ">
           {data.map(content => (
-            <div className="lg:px-10 flex flex-col p-5">
+            <div key={content.title} className="lg:px-10 flex flex-col p-5">
               <h1 className="pb-2 text-2xl font-bold border-b-2 border-nmr-liteblue ">
                 {content.title}
               </h1>

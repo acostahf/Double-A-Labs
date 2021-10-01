@@ -35,7 +35,7 @@ const CaseMobile = () => {
   return (
     <div ref={containerRef}>
       {data.map(content => (
-        <div className="flex flex-col justify-center">
+        <div key={content.title} className="flex flex-col justify-center">
           {lockRef.current && (
             <iframe
               // width="1200"
@@ -44,7 +44,7 @@ const CaseMobile = () => {
               title="YouTube video player"
               frameBorder="0"
               allowFullScreen
-              className="rounded-xl w-11/12 lg:h-500"
+              className="rounded-xl  sm:h-500"
             ></iframe>
           )}
           <div className="pb-5 text-left ">
