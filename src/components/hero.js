@@ -30,11 +30,11 @@ const Hero = ({ children }) => {
           </p>
         </div>
         <div className="pb-5">
-          <form action="mailto:info@doublealabs.com">
+          <a href="mailto:info@doublealabs.com">
             <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5">
               Try Your free Demo Now
             </button>
-          </form>
+          </a>
         </div>
       </div>
 
