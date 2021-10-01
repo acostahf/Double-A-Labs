@@ -11,7 +11,7 @@ const SectionSix = () => {
           Meet our growing team of experts and thought leaders.
         </p>
       </div>
-      <div className="">
+      <div className="pb-10">
         <TeamSlider />
       </div>
 
@@ -22,9 +22,9 @@ const SectionSix = () => {
               <h1 className="font-bold text-2xl pb-3">
                 Join the Double A Labs Team
               </h1>
-              <p className="text-sm lg:text-base">
+              {/* <p className="text-sm lg:text-base">
                 Join our fast growing team today
-              </p>
+              </p> */}
             </div>
             <div className="flex justify-center items-center  sm:w-1/4 pt-5 lg:pt-0">
               <div>

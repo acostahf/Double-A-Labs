@@ -25,7 +25,7 @@ const Footer = () => {
               Privacy
             </a>
 
-            <a href="...">Terms of use</a>
+            <a href="...">Terms of Use</a>
           </div>
           <div>
             <a href="mailto:info@doublealabs.com">Info@doublelabs.com</a>
