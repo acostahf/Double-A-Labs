@@ -14,28 +14,39 @@ const Footer = () => {
         <div className="pb-5">
           <Image
             src="whiteLogo.svg"
-            className=""
             style={{ quality: 100, width: 30, height: 30 }}
             alt="computer image"
           />
         </div>
         <h1 className="font-bold pb-5">DOUBLE A LABS</h1>
-        <div className="flex gap-10 pb-5">
+        <div className="flex flex-col lg:flex-row gap-3 lg:gap-10 pb-5">
           <div>
-            <a>Prvacy</a>
+            <a
+              className="pr-3 lg:pr-10"
+              href="https://doublealabs.com/privacy/"
+            >
+              Prvacy
+            </a>
+
+            <a href="https://doublealabs.com/terms/">Terms of use</a>
           </div>
           <div>
-            <a>Terms of use</a>
-          </div>
-          <div>
-            <a>Info@doublelabs.com</a>
+            <a href="mailto:info@doublealabs.com">Info@doublelabs.com</a>
           </div>
         </div>
         <div className="flex gap-10 text-lg">
-          <FaTwitter />
-          <FaFacebookSquare />
-          <FaLinkedin />
-          <FaYoutube />
+          <a href="...">
+            <FaTwitter />
+          </a>
+          <a href="https://www.facebook.com/doublealabs">
+            <FaFacebookSquare />
+          </a>
+          <a href="https://www.linkedin.com/company/doublealabs/">
+            <FaLinkedin />
+          </a>
+          <a href="https://www.youtube.com/channel/UCMAkoc0yEsgpX6CCjgB5Z9A">
+            <FaYoutube />
+          </a>
         </div>
       </div>
     </div>

@@ -33,7 +33,7 @@ const SectionTwo = () => {
       <div>
         <div className="flex flex-col lg:flex-row lg:flex-wrap lg:p-20">
           {data.map(content => (
-            <div className="lg:w-1/2 p-10">
+            <div key={content.title} className="lg:w-1/2 p-10">
               <div className="flex gap-4">
                 <Image
                   src={content.img}
@@ -52,10 +52,12 @@ const SectionTwo = () => {
       </div>
       <div className=" ">
         <div className="pb-20 flex justify-center">
-          <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5">
-            {" "}
-            Contact Us To Explore
-          </button>
+          <form action="mailto:info@doublealabs.com">
+            <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5">
+              {" "}
+              Contact Us To Explore
+            </button>
+          </form>
         </div>
       </div>
       {/* <div className="text-center pb-10 ">

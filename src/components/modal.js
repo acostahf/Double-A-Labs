@@ -19,13 +19,13 @@ const Modal = ({ toggleModal }) => {
               </button>
             </div>
             <iframe
-              width="1200"
-              height="600"
-              src="https://www.youtube.com/embed/DYcxd8g0REc"
+              //   width="1200"
+              //   height="600"
+              src="https://www.youtube.com/embed/CmEBVYB9n_w"
               title="YouTube video player"
               frameBorder="0"
               allowFullScreen
-              className="rounded-xl"
+              className="rounded-xl md:h-400 md:w-800 lg:h-600 lg:w-1200"
             ></iframe>
           </div>
         </div>
