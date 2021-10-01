@@ -34,7 +34,7 @@ const SectionSix = () => {
                 >
                   <button className="px-10 py-3 bg-white rounded-full flex items-center lg:gap-4">
                     <h1 className=" text-sm lgs:text-base font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue ">
-                      Join Now
+                      Request Demo
                     </h1>
                     <IoIosArrowForward className="text-nmr-darkBlue text-xl" />
                   </button>

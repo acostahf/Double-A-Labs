@@ -8,9 +8,9 @@ import "slick-carousel/slick/slick-theme.css"
 
 const settings = {
   // lazyLoad: true,
-  dots: false,
+  dots: true,
   infinite: true,
-  autoplay: true,
+  autoplay: false,
   speed: 2000,
   // slidesToShow: 1,
   slidesToScroll: 1,
@@ -57,19 +57,19 @@ const data = [
     title: "Sales Enablement",
     sub: "Dell - Train The Trainer",
     body: "Dell Sales Representatives were taken through a variety of spaces showcasing upcoming product launches and hardware improvements ahead of Black Friday. Sales Reps were taken through scheduling sessions and had hands-on interaction with the new products.",
-    vid: "https://youtube.com/embed/xu0rXT4MqpU",
+    vid: "https://www.youtube.com/embed/tbzQonXW3aM",
   },
   {
     title: "Fan Experience",
     sub: "Youtube",
     body: "Popular streamers and youtube influencers were some of the first to interact within Double Space. Creators squared off against one another in different contests, voted on personal favorites, and viewed new exclusive content within the Double Space.",
-    vid: "https://youtube.com/embed/PaOuMq7yoJg",
+    vid: "https://www.youtube.com/embed/XDkEDoDWDqw",
   },
   {
     title: "Training & Instruction",
     sub: "The Kindness Campaign",
     body: "A Double Space was created around an anti-bullying campaign put on by The Kindness Campaign. Students were tasked with exploring the treehouse and along the way observed anti-bullying content, played related mini games, and unlocked secret rewards while collaborating with their peers!",
-    vid: "https://youtube.com/embed/4Zix5saSVt8",
+    vid: "https://www.youtube.com/embed/vN4OVNvR1Gg",
   },
 ]
 
