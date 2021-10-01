@@ -33,7 +33,7 @@ const SectionTwo = () => {
       <div>
         <div className="flex flex-col lg:flex-row lg:flex-wrap lg:p-20">
           {data.map(content => (
-            <div className="lg:w-1/2 p-10">
+            <div key={content.title} className="lg:w-1/2 p-10">
               <div className="flex gap-4">
                 <Image
                   src={content.img}

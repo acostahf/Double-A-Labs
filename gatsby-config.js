@@ -1,4 +1,7 @@
 module.exports = {
+  flags: {
+    DEV_SSR: false,
+  },
   siteMetadata: {
     title: `Double A Labs`,
     description: `Through Immersive Experiences
@@ -6,7 +9,6 @@ module.exports = {
     Human Connections
     `,
     author: `Fabian Acosta`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-fontawesome-css`,

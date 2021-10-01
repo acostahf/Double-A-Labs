@@ -40,7 +40,6 @@ const SectionSeven = () => {
           name="contact"
           method="post"
           data-netlify="true"
-          netlify
           netlify-honeypot="bot-field"
           className="flex flex-col lg:text-left text-center"
         >

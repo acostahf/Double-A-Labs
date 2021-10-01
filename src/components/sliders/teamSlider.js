@@ -3,7 +3,7 @@ import Image from "../Image"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa"
+import { FaLinkedinIn } from "react-icons/fa"
 
 const settings = {
   dots: true,
@@ -48,8 +48,8 @@ const data = [
   {
     name: "Amber Allen",
     occ: "CEO & Founder Disney, Warner Bros., Riot Games",
-    body: " Amber Allan is a pioneer in the experiential technology and immersive technologies fields. With her 15+ years of experience with companies such as Disney, Warner Bros., Riot Games, Amber used her knowledge of Technology, understanding audiences and brand engagement to help launch some of the largest technology companies such as Dell, SXSW, Comic-Con,E3, HTC, Twitch, Magic Leap, YouTube, Discord and more.",
-    img: "Amber.png",
+    body: "Amber Allan is a pioneer in the experiential technology and immersive technologies fields. With her 15+ years of experience with companies such as Disney, Warner Bros., Riot Games, Amber used her knowledge of Technology, understanding audiences and brand engagement to help launch some of the largest technology companies such as Dell, SXSW, Comic-Con,E3, HTC, Twitch, Magic Leap, YouTube, Discord and more.",
+    img: "Amber.jpg",
     soc: "https://www.linkedin.com/in/amberallendoublea/",
   },
   {
@@ -58,6 +58,13 @@ const data = [
     body: "Asena Atalik brings 20 years of experience in executive and leadership roles across operations, strategy, finance, corporate development and investment management. Asena's prior experience spans across the hedge fund industry, as well as Electronic Arts and Mattel.",
     img: "Asena.png",
     soc: "https://www.linkedin.com/in/asena-atalik-a5ab65/",
+  },
+  {
+    name: "Aaron Murray",
+    occ: "VP Of Engineering",
+    body: "Aaron Murray is a leader in software engineering innovation in a career that spans 20 years;  leadership across e-commerce and gaming. His experience has spanned the gamut from start-ups that were acquired (by Home Away and Vista Print) to industry titans (Amazon, Toyota, Kabam).",
+    img: "Aaron.jpg",
+    soc: "https://www.linkedin.com/in/akmurray/",
   },
   {
     name: "Dave Prout",
@@ -95,7 +102,7 @@ const TeamSlider = () => {
                     src={content.img}
                     className=""
                     // style={{ quality: 100, width: 100, height: 100 }}
-                    alt="computer image"
+                    alt="Profile Pic"
                   />
                 </div>
                 <div className="text-left w-3/4 px-5">
