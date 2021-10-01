@@ -96,7 +96,7 @@ const SectionSeven = () => {
           </div>
         </form>
       </div>
-      <div className="flex items-center bg-room bg-no-repeat"></div>
+      <div className="flex items-center bg-room bg-cover bg-no-repeat"></div>
     </div>
   )
 }

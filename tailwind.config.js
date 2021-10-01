@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -8,7 +8,7 @@ module.exports = {
         hero: "url('../images/hero@2x.svg')",
         secTwo: "url('../images/secTwo.svg')",
         group: "url('../images/Group.png')",
-        room: "url('../images/bottomImage.png')",
+        room: "url('../images/room.svg')",
         secSnS: "url('../images/secSS.svg')",
         cardG: "url('../images/cardG.png')",
         dots: "url('../images/dots.png')",
