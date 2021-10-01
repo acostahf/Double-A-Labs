@@ -28,14 +28,17 @@ const SectionSix = () => {
             </div>
             <div className="flex justify-center items-center  sm:w-1/4 pt-5 lg:pt-0">
               <div>
-                <a href="mailto:info@doublealabs.com">
+                <form
+                  action="https://jobs.lever.co/doublealabs/"
+                  target="_blank"
+                >
                   <button className="px-10 py-3 bg-white rounded-full flex items-center lg:gap-4">
                     <h1 className=" text-sm lgs:text-base font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue ">
                       Join Now
                     </h1>
                     <IoIosArrowForward className="text-nmr-darkBlue text-xl" />
                   </button>
-                </a>
+                </form>
               </div>
             </div>
           </div>
