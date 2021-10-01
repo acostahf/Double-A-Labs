@@ -21,21 +21,18 @@ const Footer = () => {
         <h1 className="font-bold pb-5">DOUBLE A LABS</h1>
         <div className="flex flex-col lg:flex-row gap-3 lg:gap-10 pb-5">
           <div>
-            <a
-              className="pr-3 lg:pr-10"
-              href="https://doublealabs.com/privacy/"
-            >
+            <a className="pr-3 lg:pr-10" href="...">
               Prvacy
             </a>
 
-            <a href="https://doublealabs.com/terms/">Terms of use</a>
+            <a href="...">Terms of use</a>
           </div>
           <div>
             <a href="mailto:info@doublealabs.com">Info@doublelabs.com</a>
           </div>
         </div>
         <div className="flex gap-10 text-lg">
-          <a href="...">
+          <a href="https://twitter.com/doublea_labs">
             <FaTwitter />
           </a>
           <a href="https://www.facebook.com/doublealabs">
