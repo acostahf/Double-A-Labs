@@ -11,14 +11,14 @@ const Cards = () => {
               Our Mission
             </h1>
             <div className="flex gap-4 items-center pb-5">
-              <AiFillCheckCircle className="text-nmr-darkBlue w-1/6 text-lg" />
+              {/* <AiFillCheckCircle className="text-nmr-darkBlue w-1/6 text-lg" /> */}
               <p className="w-4/6">
                 Double A Labs is a catalyst for human connection, through
                 technology.{" "}
               </p>
             </div>
             <div className="flex gap-4 items-center pb-2">
-              <AiFillCheckCircle className="text-nmr-darkBlue w-1/6 text-lg" />
+              {/* <AiFillCheckCircle className="text-nmr-darkBlue w-1/6 text-lg" /> */}
               <p className="w-4/6">
                 We deliver results by removing barriers and creating real-time
                 interactions.
@@ -32,21 +32,21 @@ const Cards = () => {
               Our Vision
             </h1>
             <div className="flex gap-4 items-center pb-2">
-              <AiFillCheckCircle className="text-nmr-lightBlue w-1/6 text-lg" />
+              {/* <AiFillCheckCircle className="text-nmr-lightBlue w-1/6 text-lg" /> */}
               <p className="w-4/6">We spark curiosity and exploration</p>
             </div>
             <div className="flex gap-4 items-center pb-2">
-              <AiFillCheckCircle className="text-nmr-lightBlue w-1/6 text-lg" />
+              {/* <AiFillCheckCircle className="text-nmr-lightBlue w-1/6 text-lg" /> */}
               <p className="w-4/6">We Ignite communication and collaboration</p>
             </div>
             <div className="flex gap-4 items-center pb-2">
-              <AiFillCheckCircle className="text-nmr-lightBlue w-1/6 text-lg" />
+              {/* <AiFillCheckCircle className="text-nmr-lightBlue w-1/6 text-lg" /> */}
               <p className="w-4/6">
                 We fan the flames of engagement and passion
               </p>
             </div>
             <div className="flex gap-4 items-center pb-2">
-              <AiFillCheckCircle className="text-nmr-lightBlue w-1/6 text-lg" />
+              {/* <AiFillCheckCircle className="text-nmr-lightBlue w-1/6 text-lg" /> */}
               <p className="w-4/6">Our fire burns bright for our customeres</p>
             </div>
           </div>

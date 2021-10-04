@@ -47,7 +47,7 @@ const SectionSeven = () => {
             <h1 className="text-4xl font-extrabold pb-3 ">
               Start Building Your Own World in Minutes{" "}
             </h1>
-            <p className="text-gray-400">
+            <p className="text-nmr-textGrey">
               We’re a growing team of experts and thought leaders.
             </p>
           </div>

@@ -32,7 +32,7 @@ const Hero = ({ children }) => {
         <div className="pb-5">
           <a href="mailto:info@doublealabs.com">
             <button className="flex items-center gap-4 bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5 lg:text-lg">
-              Try Your free Demo Now
+              Request Demo
               <BsArrowRight className="text-white lg:text-4xl" />
             </button>
           </a>
