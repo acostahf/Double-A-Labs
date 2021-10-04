@@ -48,14 +48,14 @@ const settings = {
 const data = [
   {
     name: "Amber Allen",
-    occ: "CEO & Founder Disney, Warner Bros., Riot Games",
-    body: "Amber Allan is a pioneer in the experiential technology and immersive technologies fields. With her 15+ years of experience with companies such as Disney, Warner Bros., Riot Games, Amber used her knowledge of Technology, understanding audiences and brand engagement to help launch some of the largest technology companies such as Dell, SXSW, Comic-Con,E3, HTC, Twitch, Magic Leap, YouTube, Discord and more.",
+    occ: "CEO",
+    body: "Amber Allen is a pioneer in the experiential technology and immersive technologies fields. With her 15+ years of experience with companies such as Disney, Warner Bros., Riot Games, Amber used her knowledge of Technology, understanding audiences and brand engagement to help launch some of the largest technology companies such as Dell, SXSW, Comic-Con,E3, HTC, Twitch, Magic Leap, YouTube, Discord and more.",
     img: "Amber.jpg",
     soc: "https://www.linkedin.com/in/amberallendoublea/",
   },
   {
     name: "Asena Atalik",
-    occ: "COO, Electronic Arts, Mattel, Bowman Capital",
+    occ: "COO",
     body: "Asena Atalik brings 20 years of experience in executive and leadership roles across operations, strategy, finance, corporate development and investment management. Asena's prior experience spans across the hedge fund industry, as well as Electronic Arts and Mattel.",
     img: "Asena.png",
     soc: "https://www.linkedin.com/in/asena-atalik-a5ab65/",

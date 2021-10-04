@@ -8,9 +8,9 @@ import useIntersectionObserver from "@react-hook/intersection-observer"
 
 const settings = {
   // lazyLoad: true,
-  dots: false,
+  dots: true,
   infinite: true,
-  autoplay: true,
+  autoplay: false,
   arrow: true,
   speed: 2000,
   // slidesToShow: 1,
@@ -57,12 +57,20 @@ const settings = {
 
 const data = [
   {
-    title: "Hybrid1",
-    vid: "https://www.youtube.com/embed/PFfQQ-3ShCE",
+    title: "Augmented Reality",
+    vid: "https://www.youtube.com/embed/xu0rXT4MqpU",
+  },
+  {
+    title: "LiveStream Events",
+    vid: "https://www.youtube.com/embed/PaOuMq7yoJg",
   },
   {
     title: "Hybrid2",
     vid: "https://www.youtube.com/embed/zQpBXMHoa8Q",
+  },
+  {
+    title: "Hybrid1",
+    vid: "https://www.youtube.com/embed/PFfQQ-3ShCE",
   },
 ]
 

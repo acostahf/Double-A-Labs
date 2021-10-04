@@ -8,11 +8,11 @@ const SectionFour = () => {
   return (
     <div className="flex flex-col justify-center pb-20">
       <div className="text-center px-20">
-        <h3 className="text-sm font-bold text-nmr-lightBlue pb-2">
+        <h1 className="text-4xl font-black pb-2">Case Studies</h1>
+        <h3 className="text-sm font-bold text-nmr-lightBlue pb-5">
           {" "}
           A PRODUCT BY DOUBE A LABS
         </h3>
-        <h1 className="text-4xl font-black pb-5">Case Studies</h1>
         <div className="lg:px-36 ">
           <p className="text-gray-400 text-md">
             A deeper look into some of our most popular spaces with an emphasis
@@ -44,12 +44,12 @@ const SectionFour = () => {
         </div>
       </div>
       <div className="flex justify-center pb-20">
-        <form action="mailto:info@doublealabs.com">
+        <a href="mailto:info@doublealabs.com">
           <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-full text-white py-3 px-5 flex items-center gap-2">
             <h1>Contact Us To Explore</h1>
             <IoIosArrowForward className="text-white text-xl" />
           </button>
-        </form>
+        </a>
       </div>
     </div>
   )
