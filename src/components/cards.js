@@ -47,7 +47,7 @@ const Cards = () => {
             </div>
             <div className="flex gap-4 items-center pb-2">
               {/* <AiFillCheckCircle className="text-nmr-lightBlue w-1/6 text-lg" /> */}
-              <p className="w-4/6">Our fire burns bright for our customeres</p>
+              <p className="w-4/6">Our fire burns bright for our customers</p>
             </div>
           </div>
         </div>

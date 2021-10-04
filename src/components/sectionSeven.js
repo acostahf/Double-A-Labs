@@ -43,7 +43,7 @@ const SectionSeven = () => {
           netlify-honeypot="bot-field"
           className="flex flex-col lg:text-left text-center"
         >
-          <div className="pb-3 text-center lg:text-left">
+          <div className="pb-3 px-4 lg:px-0 text-center lg:text-left">
             <h1 className="text-4xl font-extrabold pb-3 ">
               Start Building Your Own World in Minutes{" "}
             </h1>

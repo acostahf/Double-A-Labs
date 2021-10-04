@@ -83,7 +83,7 @@ const data = [
   },
   {
     name: "Ahna Boley",
-    occ: "VP of Customer Success",
+    occ: "Director of Immersive Experiences",
     body: "Ahna is one of the first Double A Labs employees. Having started at the company as an event producer, she currently leads the production team, who are the masterminds on the ground and in the moment that make brands’ experiences successful. Starting her professional career in marketing/events for environmental engineering consultants, she uses both her analytical and creative side to bridge the gap between production, technology, and how they compliment each other.",
     img: "Ahna.png",
     soc: "https://www.linkedin.com/in/ahna-boley-40588129/",
@@ -93,7 +93,7 @@ const data = [
 const TeamSlider = () => {
   return (
     <div className="">
-      <Slider {...settings} className="">
+      <Slider {...settings}>
         {data.map(content => (
           <div key="card" className="px-5 py-20">
             <div className="shadow-xl rounded-lg overflow-y-auto h-500 p-5 bg-white bg-cardG bg-no-repeat bg-right-bottom">
