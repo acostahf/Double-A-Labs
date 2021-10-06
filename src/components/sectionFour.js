@@ -9,10 +9,10 @@ const SectionFour = () => {
     <div className="flex flex-col justify-center pb-20">
       <div className="text-center px-20">
         <h1 className="text-4xl font-black pb-2">Case Studies</h1>
-        <h3 className="text-sm font-bold text-nmr-lightBlue pb-5">
+        {/* <h3 className="text-sm font-bold text-nmr-lightBlue pb-5">
           {" "}
           A PRODUCT BY DOUBE A LABS
-        </h3>
+        </h3> */}
         <div className="lg:px-36 ">
           <p className="text-gray-400 text-md">
             A deeper look into some of our most popular spaces with an emphasis

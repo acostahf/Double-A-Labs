@@ -12,7 +12,7 @@ const data = [
   {
     title: "Fan Experience",
     sub: "YouTube",
-    body: "Popular streamers and youtube influencers were some of the first to interact within Double Space. Creators squared off against one another in different contests, voted on personal favorites, and viewed new exclusive content within the Double Space.",
+    body: "Popular streamers and YouTube influencers were some of the first to interact within Double Space. Creators squared off against one another in different contests, voted on personal favorites, and viewed new exclusive content within the Double Space.",
     vid: "https://www.youtube.com/embed/XDkEDoDWDqw",
   },
   {
