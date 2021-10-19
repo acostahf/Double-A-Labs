@@ -14,12 +14,14 @@ const data = [
     sub: "YouTube",
     body: "Popular streamers and YouTube influencers were some of the first to interact within Double Space. Creators squared off against one another in different contests, voted on personal favorites, and viewed new exclusive content within the Double Space.",
     vid: "https://www.youtube.com/embed/XDkEDoDWDqw",
+
   },
   {
     title: "Training & Instruction",
     sub: "The Kindness Campaign",
     body: "A Double Space was created around an anti-bullying campaign put on by The Kindness Campaign. Students were tasked with exploring the treehouse and along the way observed anti-bullying content, played related mini games, and unlocked secret rewards while collaborating with their peers!",
     vid: "https://www.youtube.com/embed/vN4OVNvR1Gg",
+
   },
 ]
 
