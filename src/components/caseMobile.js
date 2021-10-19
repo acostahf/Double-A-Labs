@@ -1,6 +1,6 @@
 import React from "react"
-import { useRef } from "react"
-import useIntersectionObserver from "@react-hook/intersection-observer"
+// import { useRef } from "react"
+// import useIntersectionObserver from "@react-hook/intersection-observer"
 
 const data = [
   {
@@ -26,27 +26,28 @@ const data = [
 const CaseMobile = () => {
   // const [ref, setRef] = useState()
   // const { isIntersecting } = useIntersectionObserver(ref)
-  const containerRef = useRef()
-  const lockRef = useRef(false)
-  const { isIntersecting } = useIntersectionObserver(containerRef)
-  if (isIntersecting && !lockRef.current) {
-    lockRef.current = true
-  }
+  // const containerRef = useRef()
+  // const lockRef = useRef(false)
+  // const { isIntersecting } = useIntersectionObserver(containerRef)
+  // if (isIntersecting && !lockRef.current) {
+  //   lockRef.current = true
+  // }
   return (
-    <div ref={containerRef}>
+    <div>
       {data.map(content => (
         <div key={content.title} className="flex flex-col justify-center">
-          {lockRef.current && (
-            <iframe
-              // width="1200"
-              // height="600"
-              src={content.vid}
-              title="YouTube video player"
-              frameBorder="0"
-              allowFullScreen
-              className="rounded-xl  sm:h-500"
-            ></iframe>
-          )}
+          {/* {lockRef.current && ( */}
+          <iframe
+            // width="1200"
+            // height="600"
+            loading="lazy"
+            src={content.vid}
+            title="YouTube video player"
+            frameBorder="0"
+            allowFullScreen
+            className="rounded-xl  sm:h-500"
+          ></iframe>
+          {/* )} */}
           <div className="pb-5 text-left ">
             <div className="flex flex-col p-5">
               <h1 className="pb-2 text-2xl font-bold border-b-2 border-nmr-liteblue ">
