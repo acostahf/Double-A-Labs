@@ -1,18 +1,24 @@
 import React from "react"
+
+import { useRef } from "react"
+import useIntersectionObserver from "@react-hook/intersection-observer"
 import CaseSlider from "./sliders/caseSlider"
 import ProductSlider from "./sliders/productSllider"
 import { IoIosArrowForward } from "react-icons/io"
 import CaseMobile from "./caseMobile"
 
 const SectionFour = () => {
+  const containerRef = useRef()
+  const lockRef = useRef(false)
+  const { isIntersecting } = useIntersectionObserver(containerRef)
+  if (isIntersecting && !lockRef.current) {
+    lockRef.current = true
+  }
   return (
-    <div className="flex flex-col justify-center pb-20">
+    <div ref={containerRef} className="flex flex-col justify-center pb-20">
       <div className="text-center px-20">
         <h1 className="text-4xl font-black pb-2">Case Studies</h1>
-        <h3 className="text-sm font-bold text-nmr-lightBlue pb-5">
-          {" "}
-          A PRODUCT BY DOUBE A LABS
-        </h3>
+
         <div className="lg:px-36 ">
           <p className="text-gray-400 text-md">
             A deeper look into some of our most popular spaces with an emphasis
@@ -22,7 +28,9 @@ const SectionFour = () => {
       </div>
 
       <div className=" p-10 pb-20 text-center hidden lg:block">
+        {/* {lockRef.current && ( */}
         <CaseSlider />
+        {/* )} */}
       </div>
       <div className=" p-10 pb-20 text-center  lg:hidden">
         <CaseMobile />
