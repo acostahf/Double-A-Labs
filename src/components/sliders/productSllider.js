@@ -3,8 +3,8 @@ import React from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { useRef } from "react"
-import useIntersectionObserver from "@react-hook/intersection-observer"
+// import { useRef } from "react"
+// import useIntersectionObserver from "@react-hook/intersection-observer"
 
 const settings = {
   // lazyLoad: true,
@@ -75,28 +75,29 @@ const data = [
 ]
 
 const ProductSlider = () => {
-  const containerRef = useRef()
-  const lockRef = useRef(false)
-  const { isIntersecting } = useIntersectionObserver(containerRef)
-  if (isIntersecting && !lockRef.current) {
-    lockRef.current = true
-  }
+  // const containerRef = useRef()
+  // const lockRef = useRef(false)
+  // const { isIntersecting } = useIntersectionObserver(containerRef)
+  // if (isIntersecting && !lockRef.current) {
+  //   lockRef.current = true
+  // }
   return (
-    <div ref={containerRef}>
+    <div>
       <Slider {...settings}>
         {data.map(content => (
           <div key="product" className="flex justify-center">
-            {lockRef.current && (
-              <iframe
-                // width="1200"
-                // height="600"
-                src={content.vid}
-                title="YouTube video player"
-                frameBorder="0"
-                allowFullScreen
-                className="rounded-xl w-full md:w-11/12 md:h-300 lg:h-500"
-              ></iframe>
-            )}
+            {/* {lockRef.current && ( */}
+            <iframe
+              // width="1200"
+              // height="600"
+              loading="lazy"
+              src={content.vid}
+              title="YouTube video player"
+              frameBorder="0"
+              allowFullScreen
+              className="rounded-xl w-full md:w-11/12 md:h-300 lg:h-500"
+            ></iframe>
+            {/* )} */}
           </div>
         ))}
       </Slider>
