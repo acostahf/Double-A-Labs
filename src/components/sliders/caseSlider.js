@@ -74,28 +74,28 @@ const data = [
 ]
 
 const CaseSlider = () => {
-  // const containerRef = useRef()
-  // const lockRef = useRef(false)
-  // const { isIntersecting } = useIntersectionObserver(containerRef)
-  // if (isIntersecting && !lockRef.current) {
-  //   lockRef.current = true
-  // }
+  const containerRef = useRef()
+  const lockRef = useRef(false)
+  const { isIntersecting } = useIntersectionObserver(containerRef)
+  if (isIntersecting && !lockRef.current) {
+    lockRef.current = true
+  }
   return (
     <div>
       <Slider {...settings}>
         {data.map(content => (
           <div key={content.title} className="flex justify-center">
-            {/* {lockRef.current && ( */}
-            <iframe
-              // width="1200"
-              // height="600"
-              src={content.vid}
-              title="YouTube video player"
-              frameBorder="0"
-              allowFullScreen
-              className="rounded-xl w-11/12  lg:h-500"
-            ></iframe>
-            {/* )} */}
+            {lockRef.current && (
+              <iframe
+                // width="1200"
+                // height="600"
+                src={content.vid}
+                title="YouTube video player"
+                frameBorder="0"
+                allowFullScreen
+                className="rounded-xl w-11/12  lg:h-500"
+              ></iframe>
+            )}
           </div>
         ))}
       </Slider>

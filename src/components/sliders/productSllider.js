@@ -86,17 +86,17 @@ const ProductSlider = () => {
       <Slider {...settings}>
         {data.map(content => (
           <div key="product" className="flex justify-center">
-            {/* {lockRef.current && ( */}
-            <iframe
-              // width="1200"
-              // height="600"
-              src={content.vid}
-              title="YouTube video player"
-              frameBorder="0"
-              allowFullScreen
-              className="rounded-xl w-full md:w-11/12 md:h-300 lg:h-500"
-            ></iframe>
-            {/* )} */}
+            {lockRef.current && (
+              <iframe
+                // width="1200"
+                // height="600"
+                src={content.vid}
+                title="YouTube video player"
+                frameBorder="0"
+                allowFullScreen
+                className="rounded-xl w-full md:w-11/12 md:h-300 lg:h-500"
+              ></iframe>
+            )}
           </div>
         ))}
       </Slider>
