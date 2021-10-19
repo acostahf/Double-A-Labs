@@ -74,14 +74,14 @@ const data = [
 ]
 
 const CaseSlider = () => {
-  const containerRef = useRef()
-  const lockRef = useRef(false)
-  const { isIntersecting } = useIntersectionObserver(containerRef)
-  if (isIntersecting && !lockRef.current) {
-    lockRef.current = true
-  }
+  // const containerRef = useRef()
+  // const lockRef = useRef(false)
+  // const { isIntersecting } = useIntersectionObserver(containerRef)
+  // if (isIntersecting && !lockRef.current) {
+  //   lockRef.current = true
+  // }
   return (
-    <div ref={containerRef}>
+    <div>
       <Slider {...settings}>
         {data.map(content => (
           <div key={content.title} className="flex justify-center">
