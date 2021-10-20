@@ -16,10 +16,10 @@ const Hero = ({ children }) => {
       <div className="flex flex-col justify-center p-5 sm:pl-20 lg:py-20 lg:pl-20 ">
         <div className="xl:bg-arrow xl:bg-no-repeat xl:bg-right-bottom">
           <h1 className="text-lg lg:text-4xl font-bold">
-            We are on a Mission to Create
+            We Spark Human Connection to
           </h1>
           <h1 className="text-lg lg:text-4xl font-bold">
-            A Sense of Discovery that is
+            Create a Sense of Discovery that is
           </h1>
           <h1 className="text-3xl lg:text-6xl pb-10 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-yellow-500  to-red-500">
             Fun and Engaging
