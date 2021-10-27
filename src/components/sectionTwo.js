@@ -52,7 +52,7 @@ const SectionTwo = () => {
       </div>
       <div className=" ">
         <div className="pb-20 flex justify-center">
-          <a href="mailto:info@doublealabs.com">
+          <a href="mailto:demo@doublealabs.com">
             <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5">
               {" "}
               Contact Us To Explore

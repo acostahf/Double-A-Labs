@@ -30,7 +30,7 @@ const Hero = ({ children }) => {
           </p>
         </div>
         <div className="pb-5">
-          <a href="mailto:info@doublealabs.com">
+          <a href="mailto:demo@doublealabs.com">
             <button className="flex items-center gap-4 bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-lg text-white py-3 px-5 lg:text-lg">
               Request Demo
               <BsArrowRight className="text-white lg:text-4xl" />

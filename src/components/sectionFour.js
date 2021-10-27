@@ -52,7 +52,7 @@ const SectionFour = () => {
         </div>
       </div>
       <div className="flex justify-center pb-20">
-        <a href="mailto:info@doublealabs.com">
+        <a href="mailto:demo@doublealabs.com">
           <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-full text-white py-3 px-5 flex items-center gap-2">
             <h1>Contact Us To Explore</h1>
             <IoIosArrowForward className="text-white text-xl" />

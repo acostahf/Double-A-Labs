@@ -54,13 +54,6 @@ const data = [
     soc: "https://www.linkedin.com/in/amberallendoublea/",
   },
   {
-    name: "Asena Atalik",
-    occ: "COO",
-    body: "Asena Atalik brings 20 years of experience in executive and leadership roles across operations, strategy, finance, corporate development and investment management. Asena's prior experience spans across the hedge fund industry, as well as Electronic Arts and Mattel.",
-    img: "Asena.png",
-    soc: "https://www.linkedin.com/in/asena-atalik-a5ab65/",
-  },
-  {
     name: "Aaron Murray",
     occ: "VP Of Engineering",
     body: "Aaron Murray is a leader in software engineering innovation in a career that spans 20 years;  leadership across e-commerce and gaming. His experience has spanned the gamut from start-ups that were acquired (by Home Away and Vista Print) to industry titans (Amazon, Toyota, Kabam).",
