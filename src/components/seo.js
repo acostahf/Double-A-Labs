@@ -60,7 +60,7 @@ function Seo({ description, lang, meta, title }) {
           content: `website`,
         },
         {
-          property: `twiiter:image`,
+          property: `twitter:image`,
           content: metaImage,
         },
         {
