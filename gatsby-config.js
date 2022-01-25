@@ -9,7 +9,6 @@ module.exports = {
     Human Connections
     `,
     author: "doublea_labs",
-    twitterUsername: "@doublea_labs",
     url: "https://www.doublealabs.com",
     image: "/thumbnail.png",
   },
