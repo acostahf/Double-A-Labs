@@ -28,6 +28,7 @@ function Seo({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaImage = site.siteMetadata.image
   const defaultTitle = site.siteMetadata?.title
 
   return (
@@ -45,6 +46,10 @@ function Seo({ description, lang, meta, title }) {
         {
           property: `og:title`,
           content: title,
+        },
+        {
+          property: `og:image`,
+          content: metaImage,
         },
         {
           property: `og:description`,
