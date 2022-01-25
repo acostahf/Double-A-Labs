@@ -8,7 +8,10 @@ module.exports = {
     We are a Catalyst For 
     Human Connections
     `,
-    author: `Fabian Acosta`,
+    author: "doublea_labs",
+    twitterUsername: "@doublea_labs",
+    url: "https://www.doublealabs.com",
+    image: "/thumbnail.png",
   },
   plugins: [
     `gatsby-plugin-fontawesome-css`,
