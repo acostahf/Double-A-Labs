@@ -13,10 +13,20 @@ module.exports = {
     image: `src/images/thumbnail.png`,
   },
   plugins: [
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://affectionate-neumann-0cb4af.netlify.app",
+        sitemap:
+          "https://affectionate-neumann-0cb4af.netlify.app/sitemap/sitemap-index.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
