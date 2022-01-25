@@ -21,8 +21,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://www.doublealabs.com",
-        sitemap: "https://www.doublealabs.com/sitemap/sitemap-index.xml",
+        host: "https://affectionate-neumann-0cb4af.netlify.app",
+        sitemap:
+          "https://affectionate-neumann-0cb4af.netlify.app/sitemap/sitemap-index.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
