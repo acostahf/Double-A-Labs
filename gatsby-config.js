@@ -10,7 +10,7 @@ module.exports = {
     `,
     author: "doublea_labs",
     url: "https://www.doublealabs.com",
-    image: "/thumbnail.png",
+    image: "/images/thumbnail.png",
   },
   plugins: [
     `gatsby-plugin-fontawesome-css`,
