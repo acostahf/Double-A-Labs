@@ -81,7 +81,7 @@ const CaseSlider = () => {
     lockRef.current = true
   }
   return (
-    <div>
+    <div ref={containerRef}>
       <Slider {...settings}>
         {data.map(content => (
           <div key={content.title} className="flex justify-center">

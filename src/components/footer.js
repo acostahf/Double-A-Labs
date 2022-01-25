@@ -28,7 +28,7 @@ const Footer = () => {
             <a href="...">Terms of Use</a>
           </div>
           <div>
-            <a href="mailto:info@doublealabs.com">Info@doublelabs.com</a>
+            <a href="mailto:demo@doublealabs.com">demo@doublelabs.com</a>
           </div>
         </div>
         <div className="flex gap-10 text-lg">

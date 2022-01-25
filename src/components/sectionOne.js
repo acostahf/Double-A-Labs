@@ -5,7 +5,7 @@ const SectionOne = () => {
     <div className="flex justify-center flex-col text-center lg:p-10 ">
       <h1 className="text-4xl font-black pb-2">Double Space</h1>
       <h6 className="text-nmr-lightBlue font-bold text-sm pb-5">
-        A PRODUCT BY DOUBLE A LABS
+        “Meet me in my Metaverse”
       </h6>
       <div className="lg:px-40 px-5">
         <p className="text-gray-400">
