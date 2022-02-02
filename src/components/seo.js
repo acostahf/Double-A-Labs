@@ -9,6 +9,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import defaultOpenGraphImage from "../images/thumbnail.png"
 
 const Seo = ({
   description,
@@ -36,7 +37,8 @@ const Seo = ({
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = image || site.siteMetadata.image
+  const metaImage =
+    site.siteMetadata?.siteUrl + (image || defaultOpenGraphImage)
   const metaTitle = title || site.siteMetadata?.title
   const metaAuthor = author || site.siteMetadata?.author
   const metaKeywords = keywords || ["double a labs"]
