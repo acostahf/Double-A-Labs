@@ -9,8 +9,8 @@ module.exports = {
     Human Connections
     `,
     author: `@doublea_labs`,
-    siteUrl: `https://affectionate-neumann-0cb4af.netlify.app`,
-    image: `src/images/thumbnail.png`,
+    siteUrl: `https://www.doublealabs.com/`,
+    image: "/thumbnail.png",
   },
   plugins: [
     `gatsby-plugin-robots-txt`,
@@ -21,9 +21,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://affectionate-neumann-0cb4af.netlify.app",
-        sitemap:
-          "https://affectionate-neumann-0cb4af.netlify.app/sitemap/sitemap-index.xml",
+        host: "https://www.doublealabs.com/",
+        sitemap: "https://www.doublealabs.com/sitemap/sitemap-index.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },

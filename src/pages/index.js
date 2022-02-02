@@ -1,7 +1,6 @@
 import * as React from "react"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 import Hero from "../components/hero"
 import SectionTwo from "../components/sectionTwo"
 import SectionFive from "../components/sectionFive"
@@ -12,8 +11,6 @@ import SectionOne from "../components/sectionOne"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
-
     <Hero />
     <SectionOne />
     <div className="bg-secTwo bg-cover bg-no-repeat">
