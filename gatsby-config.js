@@ -10,7 +10,7 @@ module.exports = {
     `,
     author: `@doublea_labs`,
     siteUrl: `https://www.doublealabs.com/`,
-    image: `src/images/thumbnail.png`,
+    image: "/images/thumbnail.png",
   },
   plugins: [
     `gatsby-plugin-robots-txt`,
