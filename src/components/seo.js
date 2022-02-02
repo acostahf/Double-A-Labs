@@ -10,7 +10,15 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, lang, meta, title }) {
+const Seo = ({
+  description,
+  lang,
+  keywords,
+  title,
+  image,
+  siteUrl,
+  author,
+}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -28,8 +36,11 @@ function Seo({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = site.siteMetadata.image
-  const defaultTitle = site.siteMetadata?.title
+  const metaImage = image || site.siteMetadata.image
+  const metaTitle = title || site.siteMetadata?.title
+  const metaAuthor = author || site.siteMetadata?.author
+  const metaKeywords = keywords || ["double a labs"]
+  // const metaUrl = siteUrl || site.siteMetadata?.siteUrl
 
   return (
     <Helmet
@@ -37,7 +48,6 @@ function Seo({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
           name: `description`,
@@ -45,7 +55,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           property: `og:image`,
@@ -69,17 +79,24 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: metaAuthor,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ].concat(
+        metaKeywords && metaKeywords.length > 0
+          ? {
+              name: `keywords`,
+              content: metaKeywords.join(`, `),
+            }
+          : []
+      )}
     />
   )
 }

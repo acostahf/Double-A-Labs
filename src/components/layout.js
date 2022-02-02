@@ -8,25 +8,30 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import Seo from "../components/seo"
 import Header from "./header"
 import "./layout.css"
 import Footer from "./footer"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //         description
+  //         author
+  //         image
+  //         siteUrl
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Seo />
+      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <div
         style={{
           margin: `0 auto`,

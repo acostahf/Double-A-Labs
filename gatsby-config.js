@@ -9,7 +9,7 @@ module.exports = {
     Human Connections
     `,
     author: `@doublea_labs`,
-    siteUrl: `https://affectionate-neumann-0cb4af.netlify.app`,
+    siteUrl: `https://www.doublealabs.com/`,
     image: `src/images/thumbnail.png`,
   },
   plugins: [
