@@ -10,7 +10,7 @@ module.exports = {
     `,
     author: `@doublea_labs`,
     siteUrl: `https://deploy-preview-22--affectionate-neumann-0cb4af.netlify.app/`,
-    image: "thumbnail.png",
+    image: "/thumbnail.png",
   },
   plugins: [
     `gatsby-plugin-robots-txt`,
