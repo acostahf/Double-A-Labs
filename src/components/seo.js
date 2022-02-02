@@ -42,7 +42,7 @@ const Seo = ({
   const metaTitle = title || site.siteMetadata?.title
   const metaAuthor = author || site.siteMetadata?.author
   const metaKeywords = keywords || ["double a labs"]
-  // const metaUrl = siteUrl || site.siteMetadata?.siteUrl
+  const metaUrl = siteUrl || site.siteMetadata?.siteUrl
 
   return (
     <Helmet
@@ -70,6 +70,10 @@ const Seo = ({
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:url`,
+          content: metaUrl,
         },
         {
           property: `twitter:image`,
