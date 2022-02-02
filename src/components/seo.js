@@ -49,7 +49,7 @@ const Seo = ({
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={metaTitle}
       meta={[
         {
           name: `description`,
