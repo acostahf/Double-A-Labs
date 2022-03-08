@@ -26,6 +26,7 @@ module.exports = {
           grey: "#6C757D",
           bgBlue: "#F2F6FF",
           textGrey: "#333333",
+          orange: "#FF6D00",
         },
       },
       // boxShadow: {
