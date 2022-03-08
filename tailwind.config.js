@@ -15,6 +15,8 @@ module.exports = {
         nodes: "url('../images/techynodes2.svg')",
         comuter: "url('../images/computer.png')",
         arrow: "url('../images/arrow.svg')",
+        line: "url('../images/line.svg')",
+        techRoom: "url('../images/tech-room.png') ",
       },
       colors: {
         nmr: {
