@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Image from "../components/Image"
 
 const Header = ({ siteTitle }) => (
-  <header className="bg-white shadow-2xl sticky top-0 z-10">
+  <header className="bg-white  sticky top-0 z-10">
     <div className="container px-10 py-4 flex mx-auto justify-between items-center ">
       <div className="flex items-center gap-5">
         <a href="/">
@@ -17,11 +17,17 @@ const Header = ({ siteTitle }) => (
         </h1>
       </div>
       <div>
-        <a href="mailto:demo@doublealabs.com">
+        {/* <a href="mailto:demo@doublealabs.com">
           <button className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue rounded-md text-white py-2 px-5 lg:px-10 lg:text-base text-sm ">
             Request Demo
           </button>
-        </a>
+        </a> */}
+        <ul className="flex gap-4">
+          <li>Use Cases</li>
+          <li>Careers</li>
+          <li>Media</li>
+          <li>Blogs</li>
+        </ul>
       </div>
     </div>
   </header>
