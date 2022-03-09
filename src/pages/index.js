@@ -5,6 +5,7 @@ import Hero from "../components/hero"
 import SectionTwo from "../components/sectionTwo"
 import SectionSeven from "../components/sectionSeven"
 import AnimatedText from "../components/AnimatedText"
+import Features from "../components/Features"
 import SectionOne from "../components/sectionOne"
 
 const IndexPage = () => (
@@ -19,6 +20,7 @@ const IndexPage = () => (
 
     {/* <SectionSix /> */}
     <AnimatedText />
+    <Features />
     <SectionSeven />
   </Layout>
 )
