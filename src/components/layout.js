@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
           maxWidth: 1800,
         }}
       >
-        <main>{children}</main>
+        <main className="max-w-full">{children}</main>
         <Footer />
       </div>
     </>

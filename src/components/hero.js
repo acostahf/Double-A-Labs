@@ -13,23 +13,23 @@ const Hero = ({ children }) => {
 
   return (
     <div className=" grid sm:grid-cols-2 bg-line bg-no-repeat lg:py-20 py-10">
-      <div className="flex flex-col justify-center p-5 sm:pl-10  lg:py-36  lg:pl-20 ">
-        <div className="pl-5 lg:pl-0 flex flex-col gap-4">
+      <div className="flex flex-col justify-center p-5 sm:pl-10 lg:py-36  lg:pl-20 ">
+        <div className="pl-5 lg:pl-0 flex flex-col gap-4 text-nmr-midnight">
           <h1 className="text-2xl lg:text-4xl xl:text-5xl font-bold">
             We Build
-            <span className="text-2xl lg:text-4xl xl:text-5xl pb-10 font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-yellow-500  to-red-400">
+            <span className="text-2xl lg:text-4xl xl:text-5xl pb-10 font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-red  to-nmr-yellow">
               &nbsp; Virtual Worlds
             </span>
           </h1>
 
           <h1 className="text-2xl lg:text-4xl xl:text-5xl font-bold">
             for
-            <span className="text-2xl lg:text-4xl xl:text-5xl pb-10 font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-yellow-500  to-red-400">
+            <span className="text-2xl lg:text-4xl xl:text-5xl pb-10 font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-red  to-nmr-yellow">
               &nbsp; Innovative Brands
             </span>
           </h1>
 
-          <p>
+          <p className="text-nmr-gray">
             Businesses of all sizes use the Double A platform to help them work,
             connect and create in the Metaverse.
           </p>

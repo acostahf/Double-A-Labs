@@ -29,13 +29,13 @@ const SectionOne = () => {
           We enable brands to engage audiences in powerful ways.
         </h1>
       </div>
-      <div className="flex gap-4  ">
+      <div className="flex flex-wrap gap-4 justify-center ">
         {data.map((item, i) => (
           <div
             key={i}
-            className="bg-nmr-orange p-5 rounded-md w-44 text-xs text-white text-center flex items-center justify-center"
+            className="bg-nmr-orange bg-opacity-90	 p-5 rounded-md w-44 text-xs  text-center flex items-center justify-center"
           >
-            <h1>{item.content}</h1>
+            <h1 className="text-white">{item.content}</h1>
           </div>
         ))}
       </div>

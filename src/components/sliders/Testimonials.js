@@ -10,9 +10,9 @@ const settings = {
   // lazyLoad: true,
   dots: true,
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   // arrow: false,
-  speed: 2000,
+  speed: 500,
   // slidesToShow: 1,
   slidesToScroll: 1,
   // centerPadding: "200px",
@@ -60,19 +60,19 @@ const data = [
     title: "“My team is ",
     second: "loving ",
     third: "the Double A platform!",
-    sub: "Elizabeth Del Valle, Head of Global Marketing - YouTube Gaming",
+    sub: "Elizabeth Del Valle, Head of Global Marketing - YouTube Gaming”",
   },
   {
-    title: "“My team is ",
-    second: "loving ",
-    third: "the Double A platform!",
-    sub: "Elizabeth Del Valle, Head of Global Marketing - YouTube Gaming",
+    title: "“I had given up on virtual before seeing",
+    second: " this product.",
+    third: "”",
+    sub: "Nicole Rex, Vice President, Consumer & Small Business Marketing",
   },
   {
-    title: "“My team is ",
-    second: "loving ",
-    third: "the Double A platform!",
-    sub: "Elizabeth Del Valle, Head of Global Marketing - YouTube Gaming",
+    title: "“I really",
+    second: " enjoy the platform ",
+    third: " and look forward to continuing to use it for events.”",
+    sub: "Dell Team Member",
   },
 ]
 
@@ -86,7 +86,7 @@ const Testimonials = () => {
   return (
     <div
       ref={containerRef}
-      className="bg-gray-200 p-20 text-center bg-testimonials bg-no-repeat bg-cover"
+      className="bg-nmr-LightGray p-20 text-center md:bg-testimonials bg-no-repeat bg-cover"
     >
       <h1 className="text-4xl pb-20 font-semibold ">Testimonials</h1>
       <Slider {...settings}>

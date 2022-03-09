@@ -6,3 +6,55 @@
 .slick-next:before {
   display: ;
 } */
+
+.codinfox-changing-keywords {
+  vertical-align: top;
+  overflow: hidden;
+  height: 45px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.nmr-loop {
+  position: absolute;
+  top: 25px;
+  display: inline-block;
+  width: 100%;
+  opacity: 0;
+  animation: slideme 8s infinite;
+}
+.nmr-loop:nth-child(1) {
+  animation-delay: 2s;
+}
+.nmr-loop:nth-child(3) {
+  animation-delay: 4s;
+}
+.nmr-loop:nth-child(5) {
+  animation-delay: 6s;
+}
+
+@keyframes slideme {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+  5% {
+    top: 0px;
+    opacity: 1;
+  }
+  10% {
+    top: 0;
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.1;
+    top: 0;
+  }
+  30% {
+    opacity: 0;
+    top: 20px;
+  }
+}

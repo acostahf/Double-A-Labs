@@ -2,13 +2,21 @@ import React from "react"
 
 const AnimatedText = () => {
   return (
-    <div className="bg-gray-100 p-10">
+    <div className="bg-nmr-LightGray p-10">
       <div>
-        <h1 className="text-3xl text-center">
+        <h1 className="text-3xl text-nmr-midnight  ">
           Use our platform to{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-yellow-500  to-red-400">
-            increase sales
-          </span>
+          <div className="codinfox-changing-keywords" id="change">
+            <span className="nmr-loop bg-clip-text text-transparent bg-gradient-to-r from-nmr-bgBlue to-nmr-yellow">
+              increase sales
+            </span>
+            <span className="nmr-loop bg-clip-text text-transparent bg-gradient-to-r from-nmr-bgBlue to-nmr-yellow">
+              boost employee engagement
+            </span>
+            <span className="nmr-loop bg-clip-text text-transparent bg-gradient-to-r from-nmr-bgBlue to-nmr-yellow">
+              build brand loyalty
+            </span>
+          </div>
         </h1>
       </div>
     </div>

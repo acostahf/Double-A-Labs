@@ -15,12 +15,12 @@ const Brands = () => {
       </div>
       {/* images  */}
       <div>
-        <Image
+        {/* <Image
           src="placeholder-logos.png"
           className=""
           alt="logos"
           style={{ quality: 100, width: 868 }}
-        />
+        /> */}
       </div>
     </div>
   )
