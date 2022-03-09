@@ -88,14 +88,16 @@ const Testimonials = () => {
       ref={containerRef}
       className="bg-nmr-LightGray p-20 text-center md:bg-testimonials bg-no-repeat bg-cover"
     >
-      <h1 className="text-4xl pb-20 font-semibold ">Testimonials</h1>
+      <h1 className="text-4xl pb-20 font-semibold text-nmr-midnight ">
+        Testimonials
+      </h1>
       <Slider {...settings}>
         {data.map(content => (
           <div key="product" className="flex justify-center items-center ">
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center text-nmr-midnight">
               <h1 className="text-3xl pb-3">
                 {content.title}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-yellow-500  to-red-400">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-nmr-red to-nmr-yellow">
                   {content.second}
                 </span>
                 {content.third}

@@ -44,12 +44,10 @@ const SectionSeven = () => {
           className="flex flex-col lg:text-left text-center"
         >
           <div className="pb-3 px-4 lg:px-0 text-center lg:text-left">
-            <h1 className="text-4xl font-extrabold pb-3 ">
-              Start Building Your Own World in Minutes{" "}
+            <h1 className="text-4xl text-nmr-midnight max-w-md pb-3 ">
+              Learn How to Grow Your Brand and Build Your Business in the
+              Metaverse.
             </h1>
-            <p className="text-nmr-textGrey">
-              We’re a growing team of experts and thought leaders.
-            </p>
           </div>
           <input type="hidden" name="form-name" value="contact" />
 
