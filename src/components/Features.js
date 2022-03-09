@@ -49,8 +49,10 @@ const Features = () => {
     <div className="flex justify-center items-center flex-col p-10 gap-6 ">
       {/* title */}
       <div className="text-center">
-        <h1 className="text-3xl font-semibold pb-2">Best-in-Class Features</h1>
-        <p className="text-md text-gray-400">
+        <h1 className="text-3xl font-semibold pb-2 text-nmr-midnight">
+          Best-in-Class Features
+        </h1>
+        <p className="text-md text-nmr-gray">
           Our platform boasts a robust set of features that power wonderfully
           immersive virtual experiences.
         </p>
@@ -61,7 +63,7 @@ const Features = () => {
         {data.map(content => (
           <div
             key={content.title}
-            className="bg-gray-200 rounded-md w-32 h-32 pl-4 py-4 pr-2 flex flex-col justify-between "
+            className="bg-nmr-LightGray text-nmr-midnight rounded-md w-32 h-32 pl-4 py-4 pr-2 flex flex-col justify-between "
           >
             <div>
               <Image

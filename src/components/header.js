@@ -8,12 +8,12 @@ const Header = ({ siteTitle }) => (
     <div className="container px-10 py-4 flex mx-auto justify-between items-center ">
       <div className="flex items-center gap-5">
         <a href="/">
-          <Image src="logo.png" className="w-10" alt="" />
+          <Image src="header-logo.png" className="w-48" alt="" />
         </a>
         <h1>
-          <Link to="/" className="text-black font-bold uppercase ">
+          {/* <Link to="/" className="text-black font-bold uppercase ">
             {siteTitle}
-          </Link>
+          </Link> */}
         </h1>
       </div>
       <div>
