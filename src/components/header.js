@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
             Request Demo
           </button>
         </a> */}
-        <ul className="flex gap-4">
+        <ul className=" gap-4 hidden md:flex">
           <li>Use Cases</li>
           <li>Careers</li>
           <li>Media</li>
