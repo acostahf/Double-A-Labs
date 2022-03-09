@@ -3,10 +3,8 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import SectionTwo from "../components/sectionTwo"
-import SectionFive from "../components/sectionFive"
-import SectionSix from "../components/sectionSix"
 import SectionSeven from "../components/sectionSeven"
-import SectionFour from "../components/sectionFour"
+import AnimatedText from "../components/AnimatedText"
 import SectionOne from "../components/sectionOne"
 
 const IndexPage = () => (
@@ -15,13 +13,13 @@ const IndexPage = () => (
     <SectionOne />
 
     <SectionTwo />
-    <SectionFour />
+    {/* <SectionFour /> */}
 
-    <SectionFive />
-    <div className="bg-secSnS bg-cover bg-no-repeat">
-      <SectionSix />
-      <SectionSeven />
-    </div>
+    {/* <SectionFive /> */}
+
+    {/* <SectionSix /> */}
+    <AnimatedText />
+    <SectionSeven />
   </Layout>
 )
 
