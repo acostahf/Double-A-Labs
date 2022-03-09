@@ -3,11 +3,11 @@ import React from "react"
 const AnimatedText = () => {
   return (
     <div className="bg-nmr-LightGray p-10">
-      <div>
-        <h1 className="text-3xl text-nmr-midnight  ">
-          Use our platform to{" "}
+      <div className="flex justify-center items-center">
+        <h1 className="text-3xl text-nmr-midnights">
+          Use our platform to
           <div className="codinfox-changing-keywords" id="change">
-            <span className="nmr-loop bg-clip-text text-transparent bg-gradient-to-r from-nmr-bgBlue to-nmr-yellow">
+            <span className="nmr-loop  bg-clip-text text-transparent bg-gradient-to-r from-nmr-bgBlue to-nmr-yellow">
               increase sales
             </span>
             <span className="nmr-loop bg-clip-text text-transparent bg-gradient-to-r from-nmr-bgBlue to-nmr-yellow">
