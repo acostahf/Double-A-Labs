@@ -12,14 +12,14 @@
   overflow: hidden;
   height: 45px;
   position: relative;
-  display: inline-block;
-  width: 100%;
+  /* display: inline-block; */
+  /* width: 100%; */
 }
 .nmr-loop {
   position: absolute;
   top: 25px;
-  display: inline-block;
-  width: 100%;
+  /* display: inline-block; */
+  /* width: 100%; */
   opacity: 0;
   animation: slideme 8s infinite;
 }
