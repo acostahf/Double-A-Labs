@@ -13,10 +13,10 @@ const IndexPage = () => (
   <Layout>
     <Hero />
     <SectionOne />
-    <div className="bg-secTwo bg-cover bg-no-repeat">
-      <SectionTwo />
-      <SectionFour />
-    </div>
+
+    <SectionTwo />
+    <SectionFour />
+
     <SectionFive />
     <div className="bg-secSnS bg-cover bg-no-repeat">
       <SectionSix />
