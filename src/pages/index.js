@@ -3,25 +3,29 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import SectionTwo from "../components/sectionTwo"
-import SectionFive from "../components/sectionFive"
-import SectionSix from "../components/sectionSix"
 import SectionSeven from "../components/sectionSeven"
-import SectionFour from "../components/sectionFour"
+import AnimatedText from "../components/AnimatedText"
+import Features from "../components/Features"
 import SectionOne from "../components/sectionOne"
+import Brands from "../components/Brands"
+import Testimonials from "../components/sliders/Testimonials"
 
 const IndexPage = () => (
   <Layout>
     <Hero />
     <SectionOne />
-    <div className="bg-secTwo bg-cover bg-no-repeat">
-      <SectionTwo />
-      <SectionFour />
-    </div>
-    <SectionFive />
-    <div className="bg-secSnS bg-cover bg-no-repeat">
-      <SectionSix />
-      <SectionSeven />
-    </div>
+
+    <SectionTwo />
+    {/* <SectionFour /> */}
+
+    {/* <SectionFive /> */}
+
+    {/* <SectionSix /> */}
+    <AnimatedText />
+    <Features />
+    <Brands />
+    <Testimonials />
+    <SectionSeven />
   </Layout>
 )
 
