@@ -17,6 +17,8 @@ module.exports = {
         arrow: "url('../images/arrow.svg')",
         line: "url('../images/line.svg')",
         techRoom: "url('../images/tech-room.png') ",
+        gradient: "url('../images/gradient.png')",
+        testimonials: "url('../images/Testimonials.png')",
       },
       colors: {
         nmr: {

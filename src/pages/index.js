@@ -7,6 +7,8 @@ import SectionSeven from "../components/sectionSeven"
 import AnimatedText from "../components/AnimatedText"
 import Features from "../components/Features"
 import SectionOne from "../components/sectionOne"
+import Brands from "../components/Brands"
+import Testimonials from "../components/sliders/Testimonials"
 
 const IndexPage = () => (
   <Layout>
@@ -21,6 +23,8 @@ const IndexPage = () => (
     {/* <SectionSix /> */}
     <AnimatedText />
     <Features />
+    <Brands />
+    <Testimonials />
     <SectionSeven />
   </Layout>
 )
