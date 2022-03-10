@@ -33,7 +33,7 @@ import React from "react"
 
 const Brands = () => {
   return (
-    <div className="bg-gradient bg-cover bg-no-repeat flex flex-col items-center justify-center p-20 gap-4">
+    <div className="bg-gradient bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center p-20 gap-4">
       {/* heading  */}
       <div className="flex flex-col justify-center items-center gap-2">
         <h1 className="text-5xl text-white font-semibold">
