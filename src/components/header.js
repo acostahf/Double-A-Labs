@@ -22,12 +22,12 @@ const Header = ({ siteTitle }) => (
             Request Demo
           </button>
         </a> */}
-        <ul className=" gap-4 hidden md:flex">
+        {/* <ul className=" gap-4 hidden md:flex">
           <li>Use Cases</li>
           <li>Careers</li>
           <li>Media</li>
           <li>Blogs</li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   </header>
