@@ -12,10 +12,10 @@ const Hero = ({ children }) => {
   }
 
   return (
-    <div className="">
-      <div className="bg-line bg-no-repeat bg-cover grid sm:grid-cols-2 p-10 lg:p-10 xl:p-20 2xl:p-32">
+    <div className="md:pb-20">
+      <div className="md:bg-line bg-no-repeat bg-cover grid sm:grid-cols-2 p-10 pt-5 lg:p-10 xl:p-20 2xl:p-32">
         {/* title  */}
-        <div className="flex flex-col justify-center md:p-5 sm:pl-10 lg:py-36 lg:pl-20 ">
+        <div className="flex flex-col justify-center items-center md:items-start md:p-5 sm:pl-10 lg:py-36  ">
           <div className="md:pl-5 lg:pl-0 flex flex-col gap-1 md:gap-4 text-nmr-midnight">
             <h1 className="text-2xl lg:text-4xl xl:text-5xl font-bold">
               We Build

@@ -67,7 +67,7 @@ const Features = () => {
         </p>
       </div>
       {/* features  */}
-      <div className="flex flex-col md:flex-row gap-5 md:gap-28 max-w-4xl py-10 ">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-28 max-w-4xl py-10 ">
         {/* card  */}
         <div className="flex flex-col gap-10">
           {data[0].listOne.map(content => (

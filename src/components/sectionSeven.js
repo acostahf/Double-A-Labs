@@ -35,90 +35,95 @@ const SectionSeven = () => {
   }
 
   return (
-    <div className="grid lg:grid-cols-2">
-      <div className=" p-5 lg:p-20 lg:pr-1">
-        <form
-          onSubmit={handleSubmit}
-          name="contact"
-          method="post"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          className="flex flex-col lg:text-left text-center"
-        >
-          <div className="pb-3 px-4 lg:px-0 text-center lg:text-left">
-            <h1 className="text-4xl text-nmr-midnight max-w-md pb-3 ">
-              Learn How to Grow Your Brand and Build Your Business in the
-              Metaverse.
-            </h1>
-          </div>
-          <input type="hidden" name="form-name" value="contact" />
-
-          <div className="pb-3">
-            <input
-              id="name"
-              type="text"
-              onChange={handleChange}
-              value={formState.name}
-              name="name"
-              placeholder="First & Last Name"
-              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
-            />
-          </div>
-          <div className="pb-3">
-            <input
-              id="phone"
-              type="text"
-              onChange={handleChange}
-              value={formState.phone}
-              name="phone"
-              placeholder="Phone"
-              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
-            />
-          </div>
-          <div className="pb-3">
-            <input
-              id="email"
-              type="text"
-              onChange={handleChange}
-              value={formState.email}
-              name="phone"
-              placeholder="Email Address"
-              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
-            />
-          </div>
-          <div className="pb-3">
-            <input
-              id="company"
-              type="text"
-              onChange={handleChange}
-              value={formState.company}
-              name="company"
-              placeholder="Your Company Name"
-              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
-            />
-          </div>
-          <div className="pb-3">
-            <input
-              id="needs"
-              type="text"
-              onChange={handleChange}
-              value={formState.needs}
-              name="needs"
-              placeholder="Tell Us Your Needs"
-              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
-            />
-          </div>
-          <div className="">
-            <button
-              type="submit"
-              className="bg-nmr-red text-sm text-white rounded-3xl py-4 px-10"
-            >
-              Get Started
-            </button>
-          </div>
-        </form>
+    <div>
+      <div className="text-center text-4xl font-semibold  pt-10 md:py-10">
+        <h1>Request Info</h1>
       </div>
-      <div className="flex items-center bg-room bg-cover bg-no-repeat"></div>
+      <div className="grid lg:grid-cols-2">
+        <div className="p-5 lg:p-20 lg:pt-0 lg:pb-10 lg:pr-1">
+          <form
+            onSubmit={handleSubmit}
+            name="contact"
+            method="post"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            className="flex flex-col lg:text-left text-center"
+          >
+            <div className="pb-10  px-4 lg:px-0 text-center lg:text-left">
+              <h1 className="text-4xl text-nmr-midnight max-w-md pb-3 ">
+                Learn How to Grow Your Brand and Build Your Business in the
+                Metaverse.
+              </h1>
+            </div>
+            <input type="hidden" name="form-name" value="contact" />
+
+            <div className="pb-3">
+              <input
+                id="name"
+                type="text"
+                onChange={handleChange}
+                value={formState.name}
+                name="name"
+                placeholder="First & Last Name"
+                className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
+              />
+            </div>
+            <div className="pb-3">
+              <input
+                id="phone"
+                type="text"
+                onChange={handleChange}
+                value={formState.phone}
+                name="phone"
+                placeholder="Phone"
+                className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
+              />
+            </div>
+            <div className="pb-3">
+              <input
+                id="email"
+                type="text"
+                onChange={handleChange}
+                value={formState.email}
+                name="phone"
+                placeholder="Email Address"
+                className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
+              />
+            </div>
+            <div className="pb-3">
+              <input
+                id="company"
+                type="text"
+                onChange={handleChange}
+                value={formState.company}
+                name="company"
+                placeholder="Your Company Name"
+                className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
+              />
+            </div>
+            <div className="pb-3">
+              <input
+                id="needs"
+                type="text"
+                onChange={handleChange}
+                value={formState.needs}
+                name="needs"
+                placeholder="Tell Us Your Needs"
+                className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
+              />
+            </div>
+            <div className="pt-5">
+              <button
+                type="submit"
+                className="bg-nmr-red text-sm text-white rounded-3xl py-4 px-10"
+              >
+                Get Started
+              </button>
+            </div>
+          </form>
+        </div>
+        <div className="flex items-center bg-room bg-cover bg-no-repeat"></div>
+      </div>
     </div>
   )
 }
