@@ -3,81 +3,106 @@ import Image from "../components/Image"
 
 const data = [
   {
-    title: "Real-Time Chat",
-    img: "Chat.svg",
+    listOne: [
+      {
+        title: "Real-Time Chat",
+        img: "Chat.svg",
+      },
+      {
+        title: "Video/Rich Media",
+        img: "Media.svg",
+      },
+      {
+        title: "Mobile Friendly",
+        img: "Mobile.svg",
+      },
+      {
+        title: "Collaboration Tools",
+        img: "Collaboration.svg",
+      },
+      {
+        title: "Client Branding",
+        img: "House.svg",
+      },
+    ],
   },
   {
-    title: "Video/Rich Media",
-    img: "Media.svg",
-  },
-  {
-    title: "Mobile Friendly",
-    img: "Mobile.svg",
-  },
-  {
-    title: "Collaboration Tools",
-    img: "Collaboration.svg",
-  },
-  {
-    title: "Client Branding",
-    img: "House.svg",
-  },
-  {
-    title: "No Limits To # of Users",
-    img: "No-Limits.svg",
-  },
-  {
-    title: "Games and Activities",
-    img: "Games.svg",
-  },
-  {
-    title: "Intuitive User Experience",
-    img: "UX.svg",
-  },
-  {
-    title: "Data Reporting",
-    img: "Data.svg",
-  },
-  {
-    title: "Premium Security",
-    img: "Security.svg",
+    listTwo: [
+      {
+        title: "No Limits To # of Users",
+        img: "No-Limits.svg",
+      },
+      {
+        title: "Games and Activities",
+        img: "Games.svg",
+      },
+      {
+        title: "Intuitive User Experience",
+        img: "UX.svg",
+      },
+      {
+        title: "Data Reporting",
+        img: "Data.svg",
+      },
+      {
+        title: "Premium Security",
+        img: "Security.svg",
+      },
+    ],
   },
 ]
 
 const Features = () => {
+  console.log(data)
   return (
     <div className="flex justify-center items-center flex-col p-10 gap-6 ">
       {/* title */}
       <div className="text-center">
-        <h1 className="text-3xl font-semibold pb-2 text-nmr-midnight">
+        <h1 className="text-5xl font-semibold pb-2 text-nmr-midnight">
           Best-in-Class Features
         </h1>
-        <p className="text-md text-nmr-gray">
+        <p className="text-base text-nmr-gray">
           Our platform boasts a robust set of features that power wonderfully
           immersive virtual experiences.
         </p>
       </div>
       {/* features  */}
-      <div className="flex flex-wrap justify-center items-center gap-4 max-w-3xl">
+      <div className="flex gap-4 max-w-xldfdfsls py-10 ">
         {/* card  */}
-        {data.map(content => (
-          <div
-            key={content.title}
-            className="bg-nmr-LightGray text-nmr-midnight rounded-md w-32 h-32 pl-4 py-4 pr-2 flex flex-col justify-between "
-          >
-            <div>
-              <Image
-                src={content.img}
-                className=""
-                alt={content.img}
-                style={{ quality: 100, width: 17 }}
-              />
+        <div className="flex flex-col gap-4">
+          {data[0].listOne.map(content => (
+            <div key={content.title} className="text-nmr-gray flex gap-2 ">
+              <div>
+                <Image
+                  src={content.img}
+                  className=""
+                  alt={content.img}
+                  style={{ quality: 100, width: 45 }}
+                />
+              </div>
+              <div>
+                <h1 className="text-base">{content.title}</h1>
+              </div>
             </div>
-            <div>
-              <h1 className="text-xs">{content.title}</h1>
+          ))}
+        </div>
+        <div className="flex flex-col gap-4">
+          {data[1].listTwo.map(content => (
+            <div key={content.title} className="text-nmr-gray flex gap-2 ">
+              <div>
+                <Image
+                  src={content.img}
+                  className=""
+                  alt={content.img}
+                  style={{ quality: 100, width: 45 }}
+                />
+              </div>
+              <div>
+                <h1 className="text-base">{content.title}</h1>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   )

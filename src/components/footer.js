@@ -9,17 +9,17 @@ import {
 
 const Footer = () => {
   return (
-    <div className="p-20 bg-nmr-bgBlue">
+    <div className="p-20 bg-footerGrad bg-no-repeat bg-cover">
       <div className="text-white flex flex-col items-center md:flex-row justify-between ">
         <div className="flex flex-col justify-center gap-3 pb-5">
-          <div className="flex gap-6">
+          <div className="flex gap-6 md:pl-10">
             <a className=" " href="/">
               Privacy
             </a>
 
+            <a href="/">Careers</a>
             <a href="/">Terms</a>
-            <a href="/">Contact</a>
-            <a href="/">About</a>
+            {/* <a href="/">About</a> */}
           </div>
           {/* <div>
             <a href="mailto:demo@doublealabs.com">demo@doublelabs.com</a>

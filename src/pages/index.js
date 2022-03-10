@@ -21,7 +21,7 @@ const IndexPage = () => (
     {/* <SectionFive /> */}
 
     {/* <SectionSix /> */}
-    <AnimatedText />
+    {/* <AnimatedText /> */}
     <Features />
     <Brands />
     <Testimonials />

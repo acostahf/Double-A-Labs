@@ -84,10 +84,7 @@ const Testimonials = () => {
     lockRef.current = true
   }
   return (
-    <div
-      ref={containerRef}
-      className="bg-nmr-LightGray p-20 text-center md:bg-testimonials bg-no-repeat bg-cover"
-    >
+    <div ref={containerRef} className="bg-nmr-LightGray p-20 text-center ">
       <h1 className="text-4xl pb-20 font-semibold text-nmr-midnight ">
         Testimonials
       </h1>

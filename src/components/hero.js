@@ -17,19 +17,18 @@ const Hero = ({ children }) => {
         <div className="pl-5 lg:pl-0 flex flex-col gap-4 text-nmr-midnight">
           <h1 className="text-2xl lg:text-4xl xl:text-5xl font-bold">
             We Build
-            <span className="text-2xl lg:text-4xl xl:text-5xl pb-10 font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-red  to-nmr-yellow">
-              &nbsp; Virtual Worlds
+            <span className="text-2xl lg:text-4xl xl:text-5xl pb-10 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-nmr-red  to-nmr-yellow">
+              &nbsp;Virtual Worlds
             </span>
           </h1>
-
           <h1 className="text-2xl lg:text-4xl xl:text-5xl font-bold">
             for
             <span className="text-2xl lg:text-4xl xl:text-5xl pb-10 font-bold bg-clip-text text-transparent bg-gradient-to-r from-nmr-red  to-nmr-yellow">
-              &nbsp; Innovative Brands
+              &nbsp;Innovative Brands
             </span>
           </h1>
 
-          <p className="text-nmr-gray">
+          <p className="text-nmr-gray max-w-xl">
             Businesses of all sizes use the Double A platform to help them work,
             connect and create in the Metaverse.
           </p>
@@ -37,7 +36,7 @@ const Hero = ({ children }) => {
 
         <div className="py-5 pl-5 lg:pl-0 ">
           <a href="mailto:demo@doublealabs.com">
-            <button className="flex items-center  gap-4 bg-nmr-orange rounded-2xl text-white py-3 px-5 lg:text-lg">
+            <button className="flex items-center  gap-4 bg-nmr-red rounded-3xl text-white py-3 px-5 lg:text-lg">
               Request Demo
             </button>
           </a>

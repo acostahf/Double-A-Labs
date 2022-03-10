@@ -60,17 +60,17 @@ const SectionTwo = () => {
       pt-10
       "
       >
-        <h1 className="text-3xl text-nmr-midnight font-bold pb-2">
+        <h1 className="text-5xl text-nmr-midnight font-bold pb-2">
           Transform Your Business
         </h1>
-        <p className="text-nmr-gray">
+        <p className="text-nmr-gray text-base">
           Three ways that brands use our virtual worlds to maximize commuication
           and collaboration.
         </p>
       </div>
       {/* cards */}
       <div>
-        <div className="flex lg:flex-row flex-col items-center pt-10 gap-4 md:p-20">
+        <div className="flex lg:flex-row flex-col justify-center items-center pt-10 gap-4 md:p-20 md:pb-0">
           {data.map(content => (
             <div key={content.title} className=" pb-10 ">
               <div
@@ -79,7 +79,7 @@ const SectionTwo = () => {
               >
                 <Image src={content.img} className="rounded-t-md" alt="mic" />
                 <div className="p-8">
-                  <h1 className="pb-5 bg-clip-text text-transparent bg-gradient-to-r from-nmr-red  to-nmr-yellow text-2xl">
+                  <h1 className="pb-2 text-nmr-red text-2xl">
                     {content.title}
                   </h1>
                   <h2 className="text-nmr-midnight font-semibold lg:text-left">
