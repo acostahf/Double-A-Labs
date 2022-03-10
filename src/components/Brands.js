@@ -33,9 +33,9 @@ const logos = [
 
 const Brands = () => {
   return (
-    <div className="bg-gradient bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center pb-10 md:p-20 gap-4">
+    <div className="bg-gradient bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center py-10 md:p-20 gap-4">
       {/* heading  */}
-      <div className="flex flex-col justify-center items-center gap-2 p-10 pb-0">
+      <div className="flex flex-col justify-center items-center gap-2 px-10 ">
         <h1 className="text-4xl md:text-5xl text-white font-semibold">
           Loved By Leading Brands
         </h1>
