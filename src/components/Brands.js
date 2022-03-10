@@ -1,4 +1,3 @@
-import { data } from "autoprefixer"
 import React from "react"
 import Image from "../components/Image"
 
