@@ -9,29 +9,31 @@ import {
 
 const Footer = () => {
   return (
-    <div className="p-20 bg-nmr-bgBlue">
-      <div className="text-white flex flex-col items-center md:flex-row  justify-between ">
+    <div className="px-20 pb-10 pt-10 bg-footerGrad bg-no-repeat bg-cover bg-center">
+      <div className="text-white flex flex-col items-center md:flex-row justify-between ">
         <div className="flex flex-col justify-center gap-3 pb-5">
-          <div className="flex gap-6">
-            <a className=" " href="...">
+          <div className="flex gap-6 md:pl-10">
+            <a className=" " href="/">
               Privacy
             </a>
 
-            <a href="...">Terms</a>
-            <a href="...">Contact</a>
-            <a href="...">About</a>
+            <a href="/">Careers</a>
+            <a href="/">Terms</a>
+            {/* <a href="/">About</a> */}
           </div>
           {/* <div>
             <a href="mailto:demo@doublealabs.com">demo@doublelabs.com</a>
           </div> */}
         </div>
         <div className="flex flex-col justify-center items-center pb-5">
-          <Image
-            src="whiteLogo.svg"
-            style={{ quality: 100, width: 30, height: 30 }}
-            alt="computer image"
-          />
-          <h1 className="font-bold pb-5 pt-2">DOUBLE A LABS</h1>
+          <div className="flex justify-center items-center flex-col">
+            <Image
+              src="whiteLogo.svg"
+              style={{ quality: 100, width: 30, height: 30 }}
+              alt="computer image"
+            />
+            <h1 className="font-bold  pt-2">DOUBLE A LABS</h1>
+          </div>
         </div>
         <div className="flex items-center gap-10 text-4xl">
           <a href="https://twitter.com/doublea_labs">

@@ -86,23 +86,23 @@ const Testimonials = () => {
   return (
     <div
       ref={containerRef}
-      className="bg-nmr-LightGray p-20 text-center md:bg-testimonials bg-no-repeat bg-cover"
+      className="bg-nmr-LightGray py-20 px-5 md:p-20 text-center "
     >
-      <h1 className="text-4xl pb-20 font-semibold text-nmr-midnight ">
+      <h1 className="text-4xl pb-10 font-semibold text-nmr-midnight ">
         Testimonials
       </h1>
       <Slider {...settings}>
         {data.map(content => (
-          <div key="product" className="flex justify-center items-center ">
+          <div key="product" className="flex justify-center items-center pb-5">
             <div className="flex flex-col justify-center items-center text-nmr-midnight">
-              <h1 className="text-3xl pb-3">
+              <h1 className="text=base md:text-3xl pb-3">
                 {content.title}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-nmr-red to-nmr-yellow">
                   {content.second}
                 </span>
                 {content.third}
               </h1>
-              <p>- {content.sub}</p>
+              <p className="text-sm text-nmr-gray">- {content.sub}</p>
             </div>
           </div>
         ))}

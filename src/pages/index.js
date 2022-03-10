@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import SectionTwo from "../components/sectionTwo"
 import SectionSeven from "../components/sectionSeven"
-import AnimatedText from "../components/AnimatedText"
+// import AnimatedText from "../components/AnimatedText"
 import Features from "../components/Features"
 import SectionOne from "../components/sectionOne"
 import Brands from "../components/Brands"
@@ -21,7 +21,7 @@ const IndexPage = () => (
     {/* <SectionFive /> */}
 
     {/* <SectionSix /> */}
-    <AnimatedText />
+    {/* <AnimatedText /> */}
     <Features />
     <Brands />
     <Testimonials />

@@ -20,6 +20,7 @@ module.exports = {
         gradient: "url('../images/gradient.png')",
         testimonials: "url('../images/Testimonials.png')",
         training: "url('../images/training.png')",
+        footerGrad: "url('../images/footer-grad.png')",
       },
       colors: {
         nmr: {
@@ -31,6 +32,10 @@ module.exports = {
           LightGray: "#f4f4f4",
           gray: "#6B7075",
         },
+      },
+      fontSize: {
+        base: "24px",
+        "5xl": "45px",
       },
       // boxShadow: {
       //   lg: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(255, 0, 107, 1)",
