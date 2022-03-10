@@ -67,17 +67,17 @@ const Features = () => {
         </p>
       </div>
       {/* features  */}
-      <div className="flex gap-4 max-w-xldfdfsls py-10 ">
+      <div className="flex gap-28 max-w-4xl py-10 ">
         {/* card  */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-10">
           {data[0].listOne.map(content => (
-            <div key={content.title} className="text-nmr-gray flex gap-2 ">
-              <div>
+            <div key={content.title} className="text-nmr-gray flex gap-5">
+              <div className="flex items-center">
                 <Image
                   src={content.img}
                   className=""
                   alt={content.img}
-                  style={{ quality: 100, width: 45 }}
+                  style={{ quality: 100, width: 20 }}
                 />
               </div>
               <div>
@@ -86,15 +86,15 @@ const Features = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-10">
           {data[1].listTwo.map(content => (
-            <div key={content.title} className="text-nmr-gray flex gap-2 ">
-              <div>
+            <div key={content.title} className="text-nmr-gray flex gap-5 ">
+              <div className="flex items-center">
                 <Image
                   src={content.img}
                   className=""
                   alt={content.img}
-                  style={{ quality: 100, width: 45 }}
+                  style={{ quality: 100, width: 20 }}
                 />
               </div>
               <div>

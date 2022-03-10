@@ -1,9 +1,39 @@
 import React from "react"
 import Image from "../components/Image"
 
+const data = [
+  {
+    brand: "Dell.png",
+  },
+  {
+    brand: "Amazon.png",
+  },
+  {
+    brand: "Youtube.png",
+  },
+  {
+    brand: "Sony.png",
+  },
+  {
+    brand: "Warner.png",
+  },
+  {
+    brand: "AMC.png",
+  },
+  {
+    brand: "AT&T.png",
+  },
+  {
+    brand: "IBM.png",
+  },
+  {
+    brand: "Blizzard.png",
+  },
+]
+
 const Brands = () => {
   return (
-    <div className="bg-gradient flex flex-col items-center justify-center p-20 gap-4">
+    <div className="bg-gradient bg-cover bg-no-repeat flex flex-col items-center justify-center p-20 gap-4">
       {/* heading  */}
       <div className="flex flex-col justify-center items-center gap-2">
         <h1 className="text-5xl text-white font-semibold">
@@ -14,15 +44,14 @@ const Brands = () => {
         </p>
       </div>
       {/* images  */}
-      <div className="">
+      {/* <div className="flex flex-wrap max-w-3xl">
         <Image
-          src="placeholder-logos.png"
+          src="AMC.png"
           className=""
           alt="logos"
-
-          // style={{ quality: 100, width: 868 }}
+          style={{ quality: 100, width: 126 }}
         />
-      </div>
+      </div> */}
     </div>
   )
 }

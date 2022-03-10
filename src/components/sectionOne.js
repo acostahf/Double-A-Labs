@@ -30,7 +30,7 @@ const SectionOne = () => {
             key={i}
             className="bg-white bg-opacity-80	p-5 rounded-md w-44 text-xs text-center flex items-center justify-center"
           >
-            <h1 className="text-[#2B3645]">{item.content}</h1>
+            <h1 className="text-nmr-gray">{item.content}</h1>
           </div>
         ))}
       </div>

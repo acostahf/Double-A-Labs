@@ -71,8 +71,8 @@ const SectionTwo = () => {
       {/* cards */}
       <div>
         <div className="flex lg:flex-row flex-col justify-center items-center pt-10 gap-4 md:p-20 md:pb-0">
-          {data.map(content => (
-            <div key={content.title} className=" pb-10 ">
+          {data.map((content, i) => (
+            <div key={i} className=" pb-10 ">
               <div
                 className="flex flex-col bg-gray-100 max-w-sm rounded-md lg:h-600
               "
@@ -86,8 +86,9 @@ const SectionTwo = () => {
                     {content.sub}
                   </h2>
                   <ul className="p-5">
-                    {content.points.map(listItem => (
+                    {content.points.map((listItem, i) => (
                       <li
+                        key={i}
                         className="list-disc text-nmr-gray pb-2
                       "
                       >

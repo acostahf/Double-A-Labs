@@ -4,7 +4,9 @@ const SectionSeven = () => {
   const [formState, setFormState] = useState({
     name: "",
     phone: "",
+    email: "",
     company: "",
+    needs: "",
   })
 
   const encode = data => {
@@ -75,6 +77,17 @@ const SectionSeven = () => {
           </div>
           <div className="pb-3">
             <input
+              id="email"
+              type="text"
+              onChange={handleChange}
+              value={formState.email}
+              name="phone"
+              placeholder="Email Address"
+              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
+            />
+          </div>
+          <div className="pb-3">
+            <input
               id="company"
               type="text"
               onChange={handleChange}
@@ -84,10 +97,21 @@ const SectionSeven = () => {
               className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
             />
           </div>
+          <div className="pb-3">
+            <input
+              id="needs"
+              type="text"
+              onChange={handleChange}
+              value={formState.needs}
+              name="needs"
+              placeholder="Tell Us Your Needs"
+              className="border-solid border-2 rounded-lg py-3 px-10 w-full lg:w-2/3"
+            />
+          </div>
           <div className="">
             <button
               type="submit"
-              className="bg-gradient-to-r from-nmr-liteblue to-nmr-darkBlue text-sm text-white rounded-lg py-4 px-10"
+              className="bg-nmr-red text-sm text-white rounded-3xl py-4 px-10"
             >
               Get Started
             </button>
