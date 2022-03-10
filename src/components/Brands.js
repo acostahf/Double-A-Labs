@@ -1,35 +1,35 @@
 import React from "react"
-import Image from "../components/Image"
+// import Image from "../components/Image"
 
-const data = [
-  {
-    brand: "Dell.png",
-  },
-  {
-    brand: "Amazon.png",
-  },
-  {
-    brand: "Youtube.png",
-  },
-  {
-    brand: "Sony.png",
-  },
-  {
-    brand: "Warner.png",
-  },
-  {
-    brand: "AMC.png",
-  },
-  {
-    brand: "AT&T.png",
-  },
-  {
-    brand: "IBM.png",
-  },
-  {
-    brand: "Blizzard.png",
-  },
-]
+// const data = [
+//   {
+//     brand: "Dell.png",
+//   },
+//   {
+//     brand: "Amazon.png",
+//   },
+//   {
+//     brand: "Youtube.png",
+//   },
+//   {
+//     brand: "Sony.png",
+//   },
+//   {
+//     brand: "Warner.png",
+//   },
+//   {
+//     brand: "AMC.png",
+//   },
+//   {
+//     brand: "AT&T.png",
+//   },
+//   {
+//     brand: "IBM.png",
+//   },
+//   {
+//     brand: "Blizzard.png",
+//   },
+// ]
 
 const Brands = () => {
   return (

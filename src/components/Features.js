@@ -53,7 +53,7 @@ const data = [
 ]
 
 const Features = () => {
-  console.log(data)
+  // console.log(data)
   return (
     <div className="flex justify-center items-center flex-col p-10 gap-6 ">
       {/* title */}

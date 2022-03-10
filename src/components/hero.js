@@ -1,14 +1,7 @@
 import React, { useState } from "react"
 import CModal from "../components/modal"
 import Modal from "react-modal"
-import { BsArrowRight } from "react-icons/bs"
 // Modal.setAppElement("#main")
-
-const data = [
-  {
-    url: " https://www.youtube.com/embed/CmEBVYB9n_w",
-  },
-]
 
 const Hero = ({ children }) => {
   // console.log(data[0].url)
@@ -45,7 +38,7 @@ const Hero = ({ children }) => {
 
           <div className="py-5 pl-5 lg:pl-0 ">
             <a href="mailto:demo@doublealabs.com">
-              <button className="flex items-center  gap-4 bg-nmr-red rounded-3xl text-white py-3 px-5 lg:text-lg">
+              <button className="flex items-center gap-4 bg-nmr-red rounded-3xl text-white py-3 px-5 lg:text-lg">
                 Request Demo
               </button>
             </a>
